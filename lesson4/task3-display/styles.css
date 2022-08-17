@@ -1,0 +1,9 @@
+.div1, .div2, .div3  {
+display: inline-block;
+}
+.span1, .span2, .span3{
+display: block;
+width: 200px;
+height: 100px;
+background-color: yellow;
+}
