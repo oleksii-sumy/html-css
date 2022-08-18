@@ -5,7 +5,7 @@ ol span {
     background-color: green;
     color: white;
 }
-ul span {
+ul li {
     background-color: orange;
     color: white;
 }
