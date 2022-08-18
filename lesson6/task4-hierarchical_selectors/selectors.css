@@ -1,0 +1,20 @@
+section.already-learned {
+    background-color: green;
+    color: white;
+}
+section.to-be-learned {
+    background-color:orange;
+    color: green;
+}
+section.already-learned code{
+    background-color: orange;
+}
+section.to-be-learned code{
+    background-color: green;
+}
+#special1 + li code {
+    border: 2px solid blue;
+}
+#special1 ~ li {
+    font-size: 24px;
+}
