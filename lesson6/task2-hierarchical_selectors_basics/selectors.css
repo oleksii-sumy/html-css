@@ -5,11 +5,11 @@ ol span {
     background-color: green;
     color: white;
 }
-ul li {
+ul span {
     background-color: orange;
     color: white;
 }
-#special+li {
+#special+li > span {
     border: 3px solid red;
 }
 #special~li {
