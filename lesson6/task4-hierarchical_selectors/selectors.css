@@ -15,6 +15,6 @@ section.to-be-learned code{
 #special1 + li code {
     border: 2px solid blue;
 }
-#special1 ~ li {
+#special2 ~ li {
     font-size: 24px;
 }
