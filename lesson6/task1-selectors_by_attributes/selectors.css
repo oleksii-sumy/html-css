@@ -1,21 +1,22 @@
 li {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
-[target=_blank] {
-    border: 2px solid black;
+a[target="_blank"] {
+  border: 2px solid black;
 }
-[href^="broken"] {
-    border: 2px solid red;
+a[href^="broken"] {
+  border: 2px solid red;
 }
 a[href$=".com"] {
-    margin-left: 50px;
+  margin-left: 50px;
 }
-[lang*="en"] {
-    font-size: 10px;
+a[lang|="en"] {
+  font-size: 10px;
 }
-[href*="www"] {
-    color: green;
+a[href*="www"] {
+  color: green;
 }
-[title*="popular"] {
-    font-size: 24px;
+a[title~="popular"] {
+  font-size: 24px;
 }
+
