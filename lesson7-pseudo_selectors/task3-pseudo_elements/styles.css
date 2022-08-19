@@ -3,10 +3,13 @@
   color: orange;
 }
 .theory::first-line {
- font-size: 24px;
- background-color: red;
- color: white;
+  font-size: 24px;
 }
+.theory::first-line {
+  background-color: red;
+  color: white;
+}
+
 a::before {
   content: ">";
   color: green;
