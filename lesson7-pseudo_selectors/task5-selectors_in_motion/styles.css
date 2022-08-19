@@ -32,7 +32,7 @@ div:nth-of-type(3) p {
     background: yellow;
 }
 div:nth-of-type(3) > p:nth-of-type(2) {
-    border: 50px white;
+    border: 50px solid white;
 }
 div:nth-of-type(3) em {
     color: white;
