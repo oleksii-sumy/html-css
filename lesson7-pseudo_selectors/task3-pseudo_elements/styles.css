@@ -1,0 +1,17 @@
+.theory::first-letter {
+  margin-left: 36px;
+  color: orange;
+}
+.theory::first-line {
+ font-size: 24px;
+ background-color: red;
+ color: white;
+}
+a::before {
+  content: ">";
+  color: green;
+}
+a::after {
+  content: "<";
+  color: green;
+}
