@@ -1,0 +1,17 @@
+* {
+  background-color: antiquewhite;
+}
+.content_box_sizing {
+  box-sizing: content-box;
+}
+.border_box_sizing {
+  box-sizing: border-box;
+}
+.same_style {
+  margin: 16px;
+  padding: 16px;
+  width: 512px;
+  height: 128px;
+  border: 8px solid black;
+  background-color: azure;
+}
