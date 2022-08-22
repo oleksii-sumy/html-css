@@ -1,0 +1,25 @@
+* {
+  margin-top: 50px;
+  margin-left: 50px;
+}
+div {
+  border: 2px solid black;
+  margin: 50px;
+}
+ .blue {
+  background: blue;
+
+ }
+ .yellow{
+  background: yellow;
+
+ }
+.green{
+  background: green;
+
+}
+.pink{
+  background: pink;
+  padding: 50px;
+
+}
