@@ -3,9 +3,11 @@
 }
 .content_box_sizing {
   box-sizing: content-box;
+  background-color: aquamarine;
 }
 .border_box_sizing {
   box-sizing: border-box;
+  background-color: azure;
 }
 .same_style {
   margin: 16px;
@@ -13,5 +15,4 @@
   width: 512px;
   height: 128px;
   border: 8px solid black;
-  background-color: azure;
 }
