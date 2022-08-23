@@ -1,0 +1,24 @@
+.block_red, .block_green, .block_blue, .block_yellow, .block_black {
+height: 200px;
+float: left;
+width: 20%;
+}
+.block_red{
+background-color: red;
+}
+.block_green {
+    background-color:green;
+
+ }
+.block_blue {
+    background-color: blue;
+
+}
+.block_yellow {
+    background-color:yellow;
+
+}
+.block_black {
+    background-color: black;
+
+}
