@@ -15,18 +15,21 @@ top: 0;
 left:0;
 }
 .nav-list {
+  margin: 0;
   height: 40px;
+  width: 100%;
   position: absolute;
-  padding-left: 16px;
-  margin-top: 10px;
-
+  top: 0;
 }
 .nav-item {
+  margin: 0;
+  /* padding-top: 10px; */
+  height: 40px;
     color: white;
     float: left;
-    height: 40px;
     position: relative;
-    padding-left: 10px;
+    top: 7px;
+    padding-left: 16px;
   }
   li {
     list-style-type: none;
@@ -41,7 +44,7 @@ left:0;
   width: 200px;
   background-color: aquamarine;
   position: relative;
-  top: 390px;
+  top: 50%;
   left: 50%;
 }
 .ear {
@@ -79,5 +82,6 @@ left:0;
   top: 80px;
   left: 40px;
 }
+
 
 
