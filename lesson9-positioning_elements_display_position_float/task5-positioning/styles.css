@@ -48,8 +48,8 @@ li {
   width: 200px;
   background-color: aquamarine;
   position: absolute;
-  top: 50%;
-  left: 650px;
+  top: calc(50% - 100px);
+  left: calc(50% - 100px);
 }
 .ear {
   background-color: brown;
