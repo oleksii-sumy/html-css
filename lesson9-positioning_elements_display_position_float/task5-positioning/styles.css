@@ -40,7 +40,7 @@ li {
 .content {
   margin: 0;
   background-color: beige;
-/*   width: 100%; */
+  /* width: 100%; */
   height: 5000px;
 }
 .head {
@@ -48,7 +48,7 @@ li {
   width: 200px;
   background-color: aquamarine;
   position: absolute;
-  top: 270px;
+  top: 50%;
   left: 650px;
 }
 .ear {
