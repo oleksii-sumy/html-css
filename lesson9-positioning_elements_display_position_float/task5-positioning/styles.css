@@ -41,8 +41,8 @@ left:0;
   width: 200px;
   background-color: aquamarine;
   position: relative;
-  top: 300px;
-  left: 700px;
+  top: 390px;
+  left: 50%;
 }
 .ear {
   background-color: brown;
