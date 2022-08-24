@@ -26,12 +26,12 @@
   top: 0;
 }
 .nav-item {
-  margin: 0;
+  margin-left: 16px;
   height: 40px;
   color: white;
   float: left;
-  padding-top: 7px;
-  padding-left: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 li {
   list-style-type: none;
@@ -48,7 +48,7 @@ li {
   width: 200px;
   background-color: aquamarine;
   position: absolute;
-  top: 250px;
+  top: 270px;
   left: 650px;
 }
 .ear {
@@ -86,6 +86,7 @@ li {
   top: 80px;
   left: 40px;
 }
+
 
 
 
