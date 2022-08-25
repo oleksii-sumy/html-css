@@ -1,0 +1,54 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /*  height: 100vh - висота екрана, vh - 0.01 екрана*/
+}
+.header {
+  display: flex;
+  height: 40px;
+  background-color: yellow;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  list-style-type: none;
+  margin-left: 16px;
+}
+li {
+  padding-right: 16px;
+}
+.content {
+  display: flex;
+  flex-grow: 1;
+}
+.section {
+  background-color: pink;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.news {
+  background-color: gray;
+  width: 200px;
+}
+.news_text {
+  margin: 16px;
+  display: flex;
+  justify-content: center;
+}
+.news_list {
+  line-height: 40px;
+  margin-left: 16px;
+  list-style-type: none;
+}
+
+.footer {
+  display: flex;
+  height: 40px;
+  background-color: green;
+}
+.footer_text {
+  margin: auto;
+}
