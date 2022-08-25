@@ -1,11 +1,11 @@
 .block {
-    height: 100px;
-    min-width: 100px;
-
+  height: 100px;
+  width: 100px;
+  justify-content: space-around;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .container {
-    display: flex;
-    justify-content: space-around;
-    flex: 0 1 auto;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
