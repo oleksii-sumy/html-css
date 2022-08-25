@@ -11,12 +11,14 @@
   align-items: center;
 }
 .navigation {
+  padding: 0px;
+  margin: 0px;
   display: flex;
   list-style-type: none;
-  margin-left: 16px;
+  /* margin-left: 16px; */
 }
-li {
-  padding-right: 16px;
+.nav_item {
+  margin-left: 16px;
 }
 .content {
   display: flex;
