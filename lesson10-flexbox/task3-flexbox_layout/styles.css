@@ -36,7 +36,8 @@
   width: 200px;
 }
 .news_text {
-  margin: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   display: flex;
   justify-content: center;
 }
