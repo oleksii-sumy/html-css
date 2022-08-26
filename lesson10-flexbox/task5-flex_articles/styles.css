@@ -7,7 +7,7 @@ body {
 }
 header {
   display: flex;
-  margin: auto;
+  justify-content: center;
 }
 .articles-list {
   display: flex;
