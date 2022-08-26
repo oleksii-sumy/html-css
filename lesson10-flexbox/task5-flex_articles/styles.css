@@ -4,7 +4,7 @@ body {
 }
 header {
   display: flex;
-  align-items: center;
+  margin: auto;
 }
 .articles-list {
   display: flex;
