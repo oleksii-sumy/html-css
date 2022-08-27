@@ -1,0 +1,17 @@
+div > div {
+    width: 100px;
+    height: 100px;
+    background: coral;
+  }
+div > div:nth-child(1) {   
+    display: none;
+}  
+div > div:nth-child(2) {   
+    visibility: hidden;
+}  
+div > div:nth-child(3) {   
+    visibility: visible;
+}  
+
+
+/* замість: div > div:nth-child(1)  можна викоритстати: .container > div:nth-child(1) */
