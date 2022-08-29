@@ -1,0 +1,12 @@
+.gallery {
+    display: flex;
+    overflow:scroll;
+    cursor:all-scroll;
+
+    /* flex-wrap: wrap; */
+
+}
+.thumb {
+    margin: 8px;
+    /* overflow:scroll; */
+}
