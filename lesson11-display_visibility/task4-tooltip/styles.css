@@ -1,0 +1,27 @@
+/* * {
+    box-sizing: border-box;
+} */
+.text {
+  margin: 0;
+  padding: 0;
+  margin: 16px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border-bottom: 1px dotted black;
+}
+.tooltip {
+  margin: 0;
+  padding: 0;
+
+  background-color: gray;
+  color: white;
+  border-radius: 4px;
+  padding: 8px;
+  display: none;
+  position: absolute;
+  bottom: -40px;
+}
+.text:hover .tooltip {
+  display: block;
+}
