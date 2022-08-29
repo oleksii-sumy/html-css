@@ -3,6 +3,7 @@
   display: inline-block;
 }
 .menu-button {
+  display: block;
   padding: 16px;
   background-color: darkgreen;
   opacity: 0.8;
@@ -10,6 +11,10 @@
   color: white;
   cursor: pointer;
 }
+.menu-button:hover {
+  opacity: 1;
+}
+
 .menu-list {
   margin: 0;
   padding: 0;
