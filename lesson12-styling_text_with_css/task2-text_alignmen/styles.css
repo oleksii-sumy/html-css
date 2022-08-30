@@ -6,17 +6,15 @@ h1 {
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
-  text-overflow: ellipsis ;
-
-}
-header {
+  text-overflow: ellipsis;
   width: 50%;
+  margin: auto;
 }
 div {
-  height:200px ;
+  height: 200px;
   background-color: coral;
   color: white;
   line-height: 200px;
   text-transform: uppercase;
-text-align: center;
+  text-align: center;
 }
