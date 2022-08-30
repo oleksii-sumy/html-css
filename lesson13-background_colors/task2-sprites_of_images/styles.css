@@ -1,0 +1,13 @@
+.icon {
+  margin: 100px;
+  width: 100px;
+  height: 100px;
+  background-image: url(sprites.png);
+  background-position-x: -200px;
+}
+.icon:hover {
+    background-image: url(sprites.png);
+    background-position-x: -200px;
+    background-position-y: -100px ;
+  
+}
