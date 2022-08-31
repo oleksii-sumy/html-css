@@ -1,0 +1,7 @@
+div.rectangle {
+    background-color: #8a2be2;
+}
+p.text::first-letter {
+    color: #008000;
+    font-size: 24px;
+}
