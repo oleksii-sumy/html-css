@@ -1,6 +1,3 @@
-* {
-    box-sizing: border-box;
-}
 .image-container {
   position: relative;
   display: flex;
