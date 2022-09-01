@@ -22,6 +22,9 @@
   position: absolute;
   top: calc(50% - 25px);
   left: calc(50% - 100px);
+
+  display: flex;
+  justify-content: center;
 }
 .image-button:hover {
   filter: opacity(1);
