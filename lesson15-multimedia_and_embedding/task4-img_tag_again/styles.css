@@ -1,12 +1,17 @@
 .image-container {
   position: relative;
+  display: flex;
 }
 .image {
-  display: block;
+  /* display: block;
   margin: 0px auto;
   max-width: 100%;
   position: relative;
-  left: auto;
+  left: auto; */
+
+  max-width: 100%;
+  height: auto;
+  margin: 0px auto;
 }
 
 .image-button {
