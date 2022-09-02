@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Images</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <form>
+      <div>
+        <input type="text" name="LastName" value="Emerson" />
+      </div>
+      <div>
+        <input type="number" name="age" value="17" id="check_form" />
+      </div>
+      <div>
+        <input type="check" name="agree" />
+        <label for="check_form"> Accept terms and conditions</label>
+      </div>
+      <div>
+        <div class="choose-gender">
+          <input type="radio" name="gender" id="male"/> 
+         <label for="male">Male</label> 
+        </div>
+        <div class="choose-gender">
+          <input type="radio" name="gender" id="female"/> 
+         <label for="female">Female</label> 
+        </div>
+        <div class="choose-gender">
+          <input type="radio" name="gender" id="secret"/> 
+          <label for="secret">Secret</label> 
+        </div>
+      </div>
+      <div>
+<textarea name="ecsription" placeholder="Write description"></textarea>
+        <!-- <input type="textarea" name="decsription" placeholder="Write description"> -->
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+
+
+
+    </form>
+  </body>
+</html>
