@@ -17,8 +17,8 @@
   width: 200px;
   height: 50px;
   background-color: bisque;
-  line-height: 50px;
-  text-align: center;
+/*   line-height: 50px;
+  text-align: center; */
   filter: opacity(0.5);
   position: absolute;
   top: calc(50% - 25px);
