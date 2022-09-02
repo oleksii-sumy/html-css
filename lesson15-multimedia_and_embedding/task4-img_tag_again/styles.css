@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  /* очтання зміна*/
 }
 .image {
   max-width: 100%;
@@ -23,6 +23,9 @@
   position: absolute;
   top: calc(50% - 25px);
   left: calc(50% - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 .image-button:hover {
