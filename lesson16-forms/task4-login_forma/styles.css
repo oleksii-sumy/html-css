@@ -63,7 +63,6 @@ border: 1px solid #808080;
     border: none;
 
 }
-.form-input:invalid:required {
-    
-border: 3px #ff0000;
+form-label:invalid + .form-input{
+   border: 3px #ff0000;
 }
