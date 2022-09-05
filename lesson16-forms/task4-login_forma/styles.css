@@ -64,5 +64,5 @@ border: 1px solid #808080;
 
 }
 .form-label + .form-input:invalid {
-   border-color: 3px #ff0000;
+   border: 3px #ff0000;
 }
