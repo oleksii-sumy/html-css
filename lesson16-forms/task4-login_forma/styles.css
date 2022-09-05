@@ -64,8 +64,6 @@ border: 1px solid #808080;
 
 }
 .form-input:invalid:required {
+    
 border: 3px #ff0000;
-}
-.form-control .form-label:hover {
-    border: 5px solid red;
 }
