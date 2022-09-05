@@ -51,12 +51,16 @@ border: 1px solid #808080;
 
 }
 .submit-button {
-    font-size: 32px;
+    width: 100%;
+    line-height: 32px;
     background-color: #ff7f50;
     margin-top: 16px;
     text-transform: uppercase;
     border-radius: 4px;
     color: white;
+    outline: none;
+    border: none;
+
 }
 .form-input:invalid:required {
 border: 3px #ff0000;
