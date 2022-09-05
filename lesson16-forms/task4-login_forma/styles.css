@@ -36,16 +36,18 @@
 margin-bottom: 8px;
 }
 .form-label {
-    margin-bottom: 4px;
+    display: inline-block;
+    padding-bottom: 4px;
 
 }
 .form-input {
 width: 100%;
 height: 32px;
 border-radius: 4px;
-padding: 4px;
+display: inline-block;
+padding-bottom: 4px;
 outline: none;
-border: 1px #808080;
+border: 1px solid #808080;
 
 }
 .submit-button {
