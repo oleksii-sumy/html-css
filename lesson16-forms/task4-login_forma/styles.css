@@ -37,8 +37,8 @@ margin-bottom: 8px;
 }
 .form-label {
     display: inline-block;
-    padding-bottom: 4px;
-
+    /* padding-bottom: 4px; */
+margin-bottom: 4px;
 }
 .form-input {
 width: 100%;
