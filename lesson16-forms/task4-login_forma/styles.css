@@ -4,24 +4,27 @@
 .page {
   background-color: bisque;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 16px;
+  font-family: monospace;
+
+  /* align-items: center;
+  justify-content: center; */
 }
 .login-form {
-  left: calc(50% - 150px);
-  background-color: aqua;
+  /* left: calc(50% - 150px);
   display: flex;
   flex-direction: column;
   align-items: left;
-  justify-content: center;
-  font-size: 16px;
-  font-family: monospace;
+  justify-content: center; */
+
   width: 300px;
-  height: auto;
+  background-color: aqua;
   padding: 16px;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  margin: auto;
+  /* height: auto; */
 }
 .form-title {
   text-transform: uppercase;
@@ -34,7 +37,7 @@
   margin-bottom: 8px;
 }
 .form-label {
-  display: inline-block;
+  display: block;
   /* padding-bottom: 4px; */
   margin-bottom: 4px;
 }
@@ -42,7 +45,6 @@
   width: 100%;
   height: 32px;
   border-radius: 4px;
-  display: inline-block;
   padding: 4px;
   outline: none;
   border: 1px solid #808080;
@@ -50,21 +52,12 @@
 .submit-button {
   padding: 0px;
   width: 100%;
-  line-height: 32px;
+  height: 32px;
   background-color: #ff7f50;
   margin-top: 16px;
   text-transform: uppercase;
   border-radius: 4px;
   color: white;
-  outline: none;
-  /* text-align: center; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-family: monospace;
-
-  border: none;
 }
 .form-input:invalid {
   border: 3px solid #ff0000;
