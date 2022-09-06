@@ -63,6 +63,9 @@ border: 1px solid #808080;
     border: none;
 
 }
-.form-label + .form-input:invalid {
+.form-input:required:invalid {
    border: 3px #ff0000;
 }
+/* .form-input:hover:required  {
+    border: 5px solid red;
+} */
