@@ -31,7 +31,7 @@
   /* text-align: center; */
 }
 .form-control {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
 }
 .form-label {
   display: inline-block;
