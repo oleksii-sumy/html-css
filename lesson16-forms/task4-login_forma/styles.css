@@ -30,9 +30,9 @@
   justify-content: center;
   /* text-align: center; */
 }
-/* .form-control {
+.form-control {
   margin-bottom: 8px;
-} */
+}
 .form-label {
   display: inline-block;
   /* padding-bottom: 4px; */
@@ -46,8 +46,7 @@
   padding: 4px;
   outline: none;
   border: 1px solid #808080;
-  margin-bottom: 8px;
-}
+  }
 .submit-button {
   padding: 0px;
   width: 100%;
