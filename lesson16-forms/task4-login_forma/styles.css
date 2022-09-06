@@ -65,7 +65,7 @@
   font-family: monospace;
 
 
-  /* border: none; */
+  border: none;
 }
 .form-input:invalid {
   border: 3px solid #ff0000;
