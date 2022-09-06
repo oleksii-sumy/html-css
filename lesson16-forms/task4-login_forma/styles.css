@@ -31,7 +31,7 @@
   /* text-align: center; */
 }
 .form-control {
-  margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 .form-label {
   display: inline-block;
@@ -47,8 +47,6 @@
   outline: none;
   border: 1px solid #808080;
   padding-bottom: 8px;
-  text-align:left;
-
 }
 .submit-button {
   padding: 0px;
@@ -75,4 +73,3 @@
 /* .form-input:hover:required  {
     border: 5px solid red;
 } */
-
