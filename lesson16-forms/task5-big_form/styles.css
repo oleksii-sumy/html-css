@@ -1,0 +1,14 @@
+* {
+    box-sizing: border-box;
+    /* padding: 0px; */
+}
+form {
+    margin: 32px;
+}
+input {
+    margin: 8px;
+    padding: 0;
+}
+input[type="search"] {
+    margin-left: 0px;
+}
