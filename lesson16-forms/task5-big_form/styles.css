@@ -10,3 +10,6 @@ select,
 button {
   margin: 8px;
 }
+.languages label {
+    margin-left: -6px;
+}
