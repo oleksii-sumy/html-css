@@ -4,10 +4,7 @@
 form {
   margin: 32px;
 }
-input,
-textarea,
-select,
-button {
+div {
   margin: 8px;
 }
 .languages label {
