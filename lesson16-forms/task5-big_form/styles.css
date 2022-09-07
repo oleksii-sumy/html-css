@@ -1,12 +1,15 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 form {
-    margin: 32px;
+  margin: 32px;
 }
-input, textarea, select, button {
-    margin: 8px;
+input,
+textarea,
+select,
+button {
+  margin: 8px;
 }
-div{
-    margin-left: 0px;
+div {
+  margin-left: 0px;
 }
