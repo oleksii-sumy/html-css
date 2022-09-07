@@ -5,10 +5,9 @@
 form {
     margin: 32px;
 }
-input {
+input, textarea, select, button {
     margin: 8px;
-    padding: 0;
 }
-input[type="search"] {
+div{
     margin-left: 0px;
 }
