@@ -5,7 +5,7 @@ div {
   overflow-x: auto;
 }
 td, th {
-  line-height: 40px;
+  height: 40px;
   padding: 4px;
 }
 tbody > tr:nth-child(odd) {
