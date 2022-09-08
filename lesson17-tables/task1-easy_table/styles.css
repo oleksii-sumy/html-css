@@ -5,9 +5,10 @@ table {
     margin: 16px;
     width: 500px;
 }
-div {
+
+/* div {
     overflow-x: auto;
-}
+} */
 table,
 td,
 th {
