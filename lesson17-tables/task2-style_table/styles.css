@@ -15,9 +15,9 @@ th {
 }
 th,
 td {
-  padding: 4px;
+  /* padding: 4px; */
   text-align: right;
-line-height: 40px;
+  line-height: 40px;
 }
 div {
   overflow-x: auto;
@@ -37,5 +37,4 @@ caption {
 }
 tfoot {
   font-weight: 700;
-
 }
