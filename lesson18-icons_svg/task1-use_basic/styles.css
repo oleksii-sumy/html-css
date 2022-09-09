@@ -1,12 +1,12 @@
 .row {
   display: flex;
-  /* width: 100vw; */
+ 
 }
 .column {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
+/*   flex: 1; */
 }
 .small-bird {
   width: 64px;
