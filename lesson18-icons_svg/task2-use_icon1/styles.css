@@ -13,11 +13,15 @@ button {
   cursor: pointer;
   outline: none;
   font-size: 85%;
+  padding: 0;
 }
 .bird {
   width: 32px;
   height: 32px;
   fill: #fff;
+  vertical-align: middle;
+}
+.card {
   vertical-align: middle;
 
 }
