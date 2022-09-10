@@ -11,19 +11,17 @@ button {
   font-family: "Courier New", Courier, monospace;
   border: none;
   cursor: pointer;
-  outline: none;
+  /* outline: none;
   font-size: 85%;
-  padding: 0;
+  padding: 0; */
+  vertical-align: middle;
+
 }
 .bird {
   width: 32px;
   height: 32px;
   fill: #fff;
   vertical-align: middle;
-}
-.card {
-  vertical-align: middle;
-
 }
 .button_bird:hover {
   color: darkcyan;
