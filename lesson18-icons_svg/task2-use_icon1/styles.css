@@ -12,14 +12,14 @@ button {
   border: none;
   cursor: pointer;
   outline: none;
-  padding: 0;
-  font-size: 83%;
+  font-size: 85%;
 }
 .bird {
   width: 32px;
   height: 32px;
   fill: #fff;
   vertical-align: middle;
+
 }
 .button_bird:hover {
   color: darkcyan;
