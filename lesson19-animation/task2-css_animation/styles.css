@@ -5,7 +5,7 @@
   position: absolute;
   animation: move 2s;
   animation-iteration-count: 2;
-  animation-direction: alternate;
+animation-direction: alternate ;
 }
 
 @keyframes move {
@@ -20,17 +20,17 @@
     background-color: cornflowerblue;
   }
   50% {
-    left: 300px;
-    top: 300px;
-    background-color: aqua;
+  left: 300px;
+  top: 300px;
+  background-color: aqua;
   }
   75% {
-    left: 0px;
-    top: 300px;
-    background-color: yellowgreen;
-  }
-  100% {
+  left: 0px;
+  top: 300px;
+  background-color: yellowgreen;
+}
+100% {
     left: 0px;
     top: 0px;
-  }
+}
 }
