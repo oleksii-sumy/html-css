@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  margin: 32px;
+}
+.rect {
+  margin-bottom: 16px;
+  background-color: coral;
+  text-align: center;
+  line-height: 100px;
+  opacity: 0.5;
+  width: 100px;
+  height: 100px;
+  transition: width 2s, opacity 1s;
+}
+.linear:hover {
+  width: 100%;
+  opacity: 1;
+  transition-timing-function: linear;
+}
+.ease:hover {
+  width: 100%;
+  opacity: 1;
+  transition-timing-function: ease;
+}
+.ease-in:hover {
+  width: 100%;
+  opacity: 1;
+  transition-timing-function: ease-in;
+}
+.ease-out:hover {
+  width: 100%;
+  opacity: 1;
+  transition-timing-function: ease-out;
+}
+.ease-in-out:hover {
+  width: 100%;
+  opacity: 1;
+  transition-timing-function: ease-in-out;
+}
