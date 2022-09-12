@@ -1,85 +1,36 @@
-* {
-  box-sizing: border-box;
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  position: absolute;
+  animation: move 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
 }
-div {
-  overflow-x: auto;
-}
-td, th {
-  line-height: 40px;
-  padding: 4px;
-}
-tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
+
+@keyframes move {
+  0% {
+    left: 0px;
+    top: 0px;
+    background-color: coral;
   }
-  tbody > tr:hover {
-    background-color: #aaa;
-    color: white;
-    }
-    caption {
-      margin: 8px;
-    }
-    tfoot {
-      font-weight: 700;
-    }
-  th {
+  25% {
+    left: 300px;
+    top: 0px;
+    background-color: cornflowerblue;
+  }
+  50% {
+    left: 300px;
+    top: 300px;
     background-color: aqua;
   }
-table {
-  margin: 16px;
+  75% {
+    left: 0px;
+    top: 300px;
+    background-color: yellowgreen;
+  }
+  100% {
+    left: 0px;
+    top: 0px;
+  }
 }
-table {
-  width: 500px;
-}
-table,
-td,
-th {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th,
-td {
-  padding: 4px;
-  text-align: right;
-}
-
-
-/* * {
-  box-sizing: border-box;
-}
-table {
-  margin: 16px;
-}
-table {
-  width: 500px;
-}
-table,
-td,
-th {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-th,
-td {
-  padding: 4px;
-  text-align: right;
-  line-height: 40px;
-}
-div {
-  overflow-x: auto;
-}
-tbody > tr:nth-child(odd) {
-  background-color: #f2f2f2;
-}
-tbody > tr:hover {
-  background-color: #aaa;
-  color: white;
-}
-th {
-  background-color: aqua;
-}
-caption {
-  margin-bottom: 8px;
-}
-tfoot {
-  font-weight: 700;
-} */
