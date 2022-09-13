@@ -4,18 +4,13 @@
 .conteiner {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  margin: auto;
 }
 .block {
- 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  position: absolute;
-  /* top: 50%;
-  left: 50%; */
-  /* margin: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 auto;
   width: 250px;
   height: 100px;
   border-radius: 10px;
@@ -36,10 +31,8 @@
 @keyframes move {
   from {
     top: -100px;
-    /* left: -100px; */
   }
   to {
     top: calc(50vh - 50px);
-    /* left: calc(50vh - 50px); */
   }
 }
