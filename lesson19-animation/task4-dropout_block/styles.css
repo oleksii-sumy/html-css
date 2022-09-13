@@ -36,10 +36,10 @@
 @keyframes move {
   from {
     top: -100px;
-    left: -100px;
+    /* left: -100px; */
   }
   to {
     top: calc(50vh - 50px);
-    left: calc(50vh - 50px);
+    /* left: calc(50vh - 50px); */
   }
 }
