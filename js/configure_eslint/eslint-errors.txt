@@ -1,4 +1,4 @@
-no var
+no-var
 eqeqeq
 no-undef
 no-plusplus
