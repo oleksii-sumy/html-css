@@ -1,4 +1,6 @@
-no var
-prefer const
-eqeqeq
-no udefined
+Unexpected var, use let or const instead.
+Expected '===' and instead saw '=='.eslinteqeqeq
+'c' is not defined
+Unary operator '++' used
+'d' is not defined
+Return statement should not contain assignment
