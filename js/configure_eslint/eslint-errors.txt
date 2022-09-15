@@ -1,5 +1,13 @@
-Unexpected var, use let or const instead.
-Expected '===' and instead saw '=='.eslinteqeqeq
-'c' is not defined
-Unary operator '++' used
-Return statement should not contain assignment
+no var
+eqeqeq
+no-undef
+no-plusplus
+no-return-assign
+no-undef
+
+discouraging the use of var and encouraging the use of const or let instead
+eliminating the type-unsafe equality operators
+eliminate the use of undefined
+disallows the unary operators ++ and --
+eliminate assignments from return statements
+eliminate the use of undefined
