@@ -1,0 +1,32 @@
+body {
+    box-sizing: border-box;
+}
+.content {
+    display: flex;
+    min-height: 100vh;
+
+}
+.gallery {
+    background-color: #fa5;
+    width:80%;
+    display: flex;
+}
+.image {
+    margin: auto;
+    max-width: 100%;
+    box-shadow: 0 3px 5px 0 rgb(0, 0, 0, 0.75);
+}
+.ideas {
+    width: 20%;
+    background-color: #5af;
+    display: flex;
+}
+.idea {
+    margin: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    padding: 4px;
+}
