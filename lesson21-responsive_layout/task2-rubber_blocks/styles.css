@@ -26,7 +26,9 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     text-transform: uppercase;
-    color: white;
-    font-weight: 900;
+    color: #fff;
+    font-weight: 700;
     padding: 4px;
+    white-space: nowrap; 
+    /* слова не переносяться на наступну строку   */
 }
