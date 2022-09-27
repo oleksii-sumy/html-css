@@ -66,20 +66,19 @@ html {
 .nav-list-item {
   /* padding: 0px; */
   list-style-type: none;
-  background-color: #808080;
-  color: white;
-  line-height: 2em;
   height: 2em;
+  background-color: #808080;
+  line-height: 2em;
+  color: white;
   margin-bottom: 0.5em;
-  width: 100%;
 }
 .nav-list-link {
+  width: 100%;
+  display: inline-block;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   padding: 0 0.5em;
   color: white;
-  padding-left: 0.5em;
   text-decoration: none;
-  width: 100%;
 }
