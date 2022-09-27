@@ -23,20 +23,25 @@ html {
 }
 .main {
   flex: 1 1 auto;
-  padding: 0.5em;
   display: flex;
+  justify-content: center;
 }
 .navigation {
   width: 20%;
+  padding: 0.5em;
 }
 .section {
+  padding: 0.5em;
   font-size: 1.25em;
+  width: 60%;
 }
 .news {
+  padding: 0.5em;
   width: 20%;
 }
 .units-list {
   line-height: 1.75em;
+  padding: 0px;
 }
 .css-units {
   color: #8b0000;
@@ -46,7 +51,7 @@ html {
 }
 .section__header {
   text-align: center;
-  font-size: 5rem;
+  font-size: 5vw;
 }
 .nav-list {
   padding: 0px;
@@ -54,8 +59,10 @@ html {
   display: flex;
   flex-direction: column;
   /* justify-content: center; */
+  vertical-align: middle;
 }
 .nav-list-item {
+  padding: 0px;
   background-color: #808080;
   color: white;
   line-height: 2em;
@@ -65,6 +72,7 @@ html {
   text-overflow: ellipsis;
 }
 .nav-list-link {
+  padding: 0px;
   color: white;
   padding-left: 0.5em;
   text-decoration: none;
