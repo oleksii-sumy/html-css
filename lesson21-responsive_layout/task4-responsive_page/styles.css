@@ -62,8 +62,6 @@ html {
   list-style: none;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  vertical-align: middle;
 }
 .nav-list-item {
   padding: 0px;
@@ -74,15 +72,16 @@ html {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  width: 100%;
 }
 .nav-list-link {
   padding: 0px;
   color: white;
   padding-left: 0.5em;
   text-decoration: none;
+  width: 100%;
 }
 .news {
   display: flex;
   flex-direction: column;
 }
-
