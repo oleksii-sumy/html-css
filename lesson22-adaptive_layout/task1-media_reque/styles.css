@@ -17,7 +17,11 @@
     .square {
         background-color: #ff7f50;
     }
+}
+
+@media screen and (orientation: portrait) {
     .container {
         flex-direction: column;
     }
 }
+
