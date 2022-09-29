@@ -17,36 +17,37 @@ header {
     border: none;
     outline: none;
     visibility: hidden;
+    background-color: transparent;
 }
 .fa-bars {
     vertical-align: middle;
+
 }
 .nav-list {
     padding: 0;
-}
-.nav-list-item {
-    list-style: none;
 }
 .navigation {
     padding: 0.5em;
     width: 20%;
 }
 .nav-list-item {
+    list-style-type: none;
     background-color: #808080;
     color: white;
     height: 2em;
     margin: 0.5em;
 }
 .nav-list-link {
-    padding: 0.5em;
-    color: white;
     width: 100%;
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+    padding: 0 0.5em;
+    color: white;
     text-decoration: none;
 }
+
 @media screen and (max-width: 600px){
     .button_header {
         visibility: visible;
