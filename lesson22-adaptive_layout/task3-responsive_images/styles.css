@@ -6,5 +6,5 @@ source[srcset] {
 max-width: 100%;
 }
 picture {
-    margin: auto;
+    margin: 0 auto;
 }
