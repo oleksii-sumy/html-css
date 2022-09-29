@@ -28,7 +28,7 @@ span {
   margin: auto;
 }
 
-@media screen and (min-width: 600px) and (max-width: 899px) {
+@media screen and (min-width: 600px) {
   .products {
     display: flex;
     flex-grow: 2;
