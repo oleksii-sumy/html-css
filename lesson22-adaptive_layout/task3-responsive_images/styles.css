@@ -1,7 +1,7 @@
 main {
     display: flex;
 }
-img,
+img, 
 source[srcset] {
     max-width: 100%;
 }
