@@ -10,17 +10,21 @@ header {
   padding: 0 1em;
   background-color: #eee;
   cursor: pointer;
+  display: flex;
 }
 .button_header {
+  margin: auto 0;
   padding: 0;
   border: none;
   outline: none;
   visibility: hidden;
-  background-color: transparent;
+  background: none;
 }
 .fa-bars {
   vertical-align: middle;
-  font-size: 2em;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
 }
 .nav-list {
   padding: 0;
@@ -34,7 +38,8 @@ header {
   background-color: #808080;
   color: white;
   height: 2em;
-  margin: 0.5em;
+  line-height: 2em;
+  margin-bottom: 0.5em;
 }
 .nav-list-link {
   width: 100%;
