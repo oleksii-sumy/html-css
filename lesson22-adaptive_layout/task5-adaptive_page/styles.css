@@ -40,9 +40,9 @@ html {
 .news {
   padding: 0.5em;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+  /* display: flex;
+  flex-direction: column; */
+  /* flex: 1; */
 }
 .units-list {
   line-height: 1.75em;
@@ -59,8 +59,8 @@ html {
 }
 .nav-list {
   padding: 0px;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 }
 .nav-list-item {
   list-style-type: none;
@@ -88,11 +88,11 @@ img {
 @media screen and (min-width: 600px) {
   .main_content {
     display: flex;
-    flex: 5;
+    flex: 2;
   }
-  .section {
+  /* .section {
    flex: 5;
-  }
+  } */
 }
 @media screen and (min-width: 1200px) {
   .main {
