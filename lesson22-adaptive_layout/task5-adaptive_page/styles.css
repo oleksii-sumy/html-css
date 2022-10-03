@@ -81,15 +81,15 @@ img {
 }
 
 @media screen and (min-width: 600px) {
-  .main {
+  .main_content {
     display: flex;
   }
   .navigation {
     width: 20vw;
   }
-  .section {
+  /* .section {
     width: 80vw;
-  }
+  } */
 }
 @media screen and (min-width: 1200px) {
   .main {
