@@ -81,7 +81,7 @@ img {
 }
 
 @media screen and (min-width: 600px) {
-  .main_content {
+  .main {
     display: flex;
   }
   .navigation {
