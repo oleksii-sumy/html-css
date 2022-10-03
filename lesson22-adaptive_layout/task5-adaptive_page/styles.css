@@ -40,9 +40,9 @@ html {
 .news {
   padding: 0.5em;
   width: 100%;
-  /* display: flex;
+  /* /* display: flex;
   flex-direction: column; */
-  /* flex: 1; */
+  flex: 1; 
 }
 .units-list {
   line-height: 1.75em;
@@ -88,11 +88,11 @@ img {
 @media screen and (min-width: 600px) {
   .main_content {
     display: flex;
-    flex: 2;
+    flex: 5;
   }
-  /* .section {
+  .section {
    flex: 5;
-  } */
+  }
 }
 @media screen and (min-width: 1200px) {
   .main {
