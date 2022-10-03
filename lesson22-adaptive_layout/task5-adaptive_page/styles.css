@@ -27,17 +27,21 @@ html {
   padding: 0.5em;
   display: flex;
   flex-direction: column;
-  flex:1
+  flex: 1;
 }
 .section {
   padding: 0.5em;
   font-size: 1.25em;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 .news {
   padding: 0.5em;
   width: 100%;
+  display: flex;
+  flex-direction: column;
   flex: 1;
 }
 .units-list {
@@ -84,26 +88,12 @@ img {
 @media screen and (min-width: 600px) {
   .main_content {
     display: flex;
-    flex: 5;
-  }
-  /* .section {
     flex: 2;
-  } */
+  }
 }
 @media screen and (min-width: 1200px) {
   .main {
     display: flex;
-  }
-  /* .navigation, .section, .news {
-    display: flex;
-    flex-direction: column;
-  }
-  .main_content {
     flex: 2;
   }
- */
-
-  /* .main_content {
-    flex: 2;
-  } */
 }
