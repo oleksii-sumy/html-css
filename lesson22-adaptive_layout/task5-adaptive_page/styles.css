@@ -90,6 +90,9 @@ img {
     display: flex;
     flex: 2;
   }
+  .section {
+   flex: 5;
+  }
 }
 @media screen and (min-width: 1200px) {
   .main {
