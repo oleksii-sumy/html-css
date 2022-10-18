@@ -10,10 +10,12 @@
   list-style-type: none;
   height: $unit * 7;
   align-items: center;
-  color: $text-color-secondary;
-  font-weight: 700;
+//   color: $text-color-secondary;
+//   font-weight: 700;
 
   &__item {
+    color: $text-color-secondary;
+    font-weight: 700;
     background-color: $color-secondary;
     padding: $unit;
     margin-left: $unit * 2;
