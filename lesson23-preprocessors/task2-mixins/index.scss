@@ -20,8 +20,14 @@
     }
     @include for-medium {
       background-color: #a61;
+      .container {
+        display: flex;
+      }
     }
     @include for-large {
       background-color: #c47;
+      .container {
+        display: flex;
+      }
     }
 }
