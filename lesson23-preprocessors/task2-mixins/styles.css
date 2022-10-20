@@ -39,6 +39,12 @@ body {
   }
 }
 
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 @media (min-width: 600px) and (max-width: 899px) and (orientation: landscape) {
   .container {
     flex-direction: row;

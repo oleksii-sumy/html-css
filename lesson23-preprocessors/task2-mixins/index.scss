@@ -32,6 +32,12 @@ body {
   }
 }
 .container {
+  @media screen and (orientation: portrait) {
+    flex-direction: column;
+  }
+
+}
+.container {
   @include for-small {
     flex-direction: row;
   }
