@@ -2,6 +2,12 @@
 * {
   box-sizing: border-box;
 }
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container {
   height: 100vh;
   display: flex;
@@ -15,19 +21,23 @@
   background-color: #ff7f50;
   margin: 8px;
 
-    @include for-small {
-      background-color: #8a2be2;
-    }
-    @include for-medium {
-      background-color: #a61;
-      .container {
-        display: flex;
-      }
-    }
-    @include for-large {
-      background-color: #c47;
-      .container {
-        display: flex;
-      }
-    }
+  @include for-small {
+    background-color: #8a2be2;
+  }
+  @include for-medium {
+    background-color: #a61;
+  }
+  @include for-large {
+    background-color: #c47;
+  }
+}
+.container {
+  @include for-medium {
+    flex-direction: row;
+  }
+}
+.container {
+  @include for-medium {
+    flex-direction: row;
+  }
 }
