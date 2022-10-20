@@ -32,6 +32,11 @@ body {
   }
 }
 .container {
+  @include for-small {
+    flex-direction: row;
+  }
+}
+.container {
   @include for-medium {
     flex-direction: row;
   }
