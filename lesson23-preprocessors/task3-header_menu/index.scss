@@ -1,0 +1,10 @@
+@import 'header.scss';
+
+* {
+box-sizing: border-box;
+}
+
+html {
+    font-family: $tf;
+    font-size: $fs;
+}
