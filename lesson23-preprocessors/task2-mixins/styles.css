@@ -2,6 +2,13 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   height: 100vh;
   display: flex;
@@ -29,6 +36,18 @@
 @media (min-width: 1200px) and (orientation: landscape) {
   .square {
     background-color: #c47;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) and (orientation: landscape) {
+  .container {
+    flex-direction: row;
   }
 }
 
