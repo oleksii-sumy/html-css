@@ -3,7 +3,7 @@ $md: 900px;
 $lg: 1200px;
 
 @mixin for-small {
-  @media (min-width: $sm) and (max-width: $md - 1) {
+  @media (min-width: $sm) and (max-width: $md - 1) and (orientation: landscape){
     @content;
   }
 }
@@ -14,7 +14,7 @@ $lg: 1200px;
   }
 }
 
-@mixin for-large {
+@mixin for-large{
   @media (min-width: $lg) and (orientation: landscape) {
     @content;
   }

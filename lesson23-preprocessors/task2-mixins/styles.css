@@ -23,7 +23,7 @@ body {
   background-color: #ff7f50;
   margin: 8px;
 }
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 899px) and (orientation: landscape) {
   .square {
     background-color: #8a2be2;
   }
@@ -39,7 +39,7 @@ body {
   }
 }
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 899px) and (orientation: landscape) {
   .container {
     flex-direction: row;
   }
