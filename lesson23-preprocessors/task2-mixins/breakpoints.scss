@@ -2,6 +2,12 @@ $sm: 600px;
 $md: 900px;
 $lg: 1200px;
 
+@mixin for-extra-small {
+    @media screen and (orientation: portrait) and (max-width: 599px) {
+    @content;
+  }
+}
+
 @mixin for-small {
   @media (min-width: $sm) and (max-width: $md - 1) and (orientation: landscape){
     @content;

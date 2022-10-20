@@ -39,7 +39,7 @@ body {
   }
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait) and (max-width: 599px) {
   .container {
     flex-direction: column;
   }

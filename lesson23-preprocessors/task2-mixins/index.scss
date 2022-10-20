@@ -32,10 +32,9 @@ body {
   }
 }
 .container {
-  @media screen and (orientation: portrait) {
+  @include for-extra-small {
     flex-direction: column;
   }
-
 }
 .container {
   @include for-small {
