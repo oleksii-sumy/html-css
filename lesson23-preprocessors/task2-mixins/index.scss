@@ -42,7 +42,7 @@ body {
   }
 }
 .container {
-  @include for-medium {
+  @include for-large {
     flex-direction: row;
   }
 }
