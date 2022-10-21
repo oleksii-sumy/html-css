@@ -24,6 +24,10 @@
   background-color: #9acd32;
 }
 
+.menu__item_active {
+  color: #ffff00;
+}
+
 .menu__item-text:hover {
   color: #ffff00;
 }

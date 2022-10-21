@@ -31,10 +31,12 @@ $padunit: 8px;
     background-color: $bgci;
   }
 }
-
-.menu__item-text:hover {
+.menu__item_active {
   color: $color-menu-item-active;
 }
+.menu__item-text:hover {
+  color: $color-menu-item-active;
+  }
 .menu__item_active:hover {
   .submenu {
     display: block;
