@@ -14,6 +14,7 @@ $padunit: 8px;
 }
 .menu {
   margin: 0px 0px 0px $unit;
+  padding: 0;
   text-transform: uppercase;
   cursor: pointer;
   color: #fff;
@@ -36,7 +37,6 @@ $padunit: 8px;
 }
 .menu__item_active:hover {
   .submenu {
-    // visibility: visible;
     display: block;
   }
 }
@@ -51,7 +51,6 @@ $padunit: 8px;
   z-index: 1;
   padding-left: 8px;
   padding-right: 8px;
-  // visibility: hidden;
   display: none;
   list-style-type: none;
 
