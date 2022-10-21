@@ -9,6 +9,8 @@ $padunit: 8px;
 .header {
   height: $unit;
   background-color: $header-bg-color;
+  display: flex;
+  align-items: center;
 }
 .menu {
   margin: 0px 0px 0px $unit;
@@ -28,13 +30,20 @@ $padunit: 8px;
     background-color: $bgci;
   }
 }
-.menu__item-text:hover {
-  background-color: $bgci;
-}
+
+// .menu__item-text:hover {
+//   background-color: $bgci;
+// }
 
 .menu__item-text:hover {
   color: $color-menu-item-active;
 }
+.menu__item_active:hover {
+  .submenu {
+    visibility: visible;
+  }
+}
+
 
 .submenu {
   padding: 0;
@@ -47,12 +56,18 @@ $padunit: 8px;
   padding-right: 8px;
   visibility: hidden;
   list-style-type: none;
+
+  &__item:hover {
+  color: #000;
 }
-.menu__item_active:hover {
-  .submenu {
-    visibility: visible;
-  }
+
 }
-.submenu__item:hover {
-  color: #000
-}
+
+// .menu__item_active:hover {
+//   .submenu {
+//     visibility: visible;
+//   }
+// }
+// .submenu__item:hover {
+//   color: #000;
+// }
