@@ -61,11 +61,11 @@ $padunit: 8px;
 
 }
 
-// .menu__item_active:hover {
-//   .submenu {
-//     visibility: visible;
-//   }
-// }
-// .submenu__item:hover {
-//   color: #000;
-// }
+.menu__item-active{
+position:relative
+}
+.menu__item_active:hover .submenu{
+display:flex;
+flex-direction: column;
+position: absolute;
+}
