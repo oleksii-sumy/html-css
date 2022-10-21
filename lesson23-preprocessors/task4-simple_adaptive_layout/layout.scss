@@ -1,0 +1,43 @@
+$bgc-nav: #ff7f50;
+$bgc-productlist: #006400;
+$bgc-news: #0ff;
+$unit: 8px;
+$bgc-span: #faebd7;
+$h-block: 200px;
+
+.products-list {
+  background-color: $bgc-productlist;
+  height: $h-block;
+  display: flex;
+}
+.navigation {
+  background-color: $bgc-nav;
+  height: $h-block;
+  display: flex;
+}
+.news {
+  background-color: $bgc-news;
+  height: $h-block;
+  display: flex;
+}
+
+span {
+  margin: auto;
+  text-transform: lowercase;
+  background-color: $bgc-span;
+  padding: $unit;
+  border-radius: $unit / 2;
+}
+
+
+@mixin for-middle {
+    @media (min-width:600px) {
+        @content;
+    }
+}
+
+@mixin for-large {
+    @media (min-width:900px) {
+        @content;
+    }
+}

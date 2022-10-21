@@ -1,0 +1,30 @@
+@import 'layout.scss';
+ * {
+    box-sizing: border-box;
+ }
+ html {
+    font-family: Verdana;
+ }
+
+ @include for-middle {
+    .products {
+        display: flex;
+    }
+    .navigation, .products-list {
+        flex: 1;
+    }
+ }
+ 
+  @include for-large {
+    .container {
+        display: flex;
+    }
+    .products {
+        flex: 2;
+    }
+    .news {
+        flex: 1;
+    }
+ }
+
+ 
