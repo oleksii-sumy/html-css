@@ -1,4 +1,6 @@
-export const clearList = () => {
+export const clearList = (value) => {
   searchCategories = document.querySelector('.categories');
-  searchCategories.innerHTML = '';
+  searchCategories.innerHTML = ${value};
 };
+
+clearList('');
