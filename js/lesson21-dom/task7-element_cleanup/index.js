@@ -3,4 +3,3 @@ export const clearList = (value) => {
   searchCategories.innerHTML = ${value};
 };
 
-clearList('');
