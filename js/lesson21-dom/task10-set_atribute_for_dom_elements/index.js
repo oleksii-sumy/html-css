@@ -5,5 +5,3 @@ const changeAtribute = document.querySelector('input');
   changeAtribute.setAttribute('name', 'login');
   changeAtribute.setAttribute('type', 'password');
 };
-
-finishForm();
