@@ -9,9 +9,8 @@ export const manageClasses = () => {
   classThree.classList.toggle('three_done');
 
   const classFour = document.querySelector('.four');
-  if (classFour.classList.contains('some_class')) {
-    classFour.classList.add('another_class');
+  if (classFour.classList.contains('some-class')) {
+    classFour.classList.add('another-class');
   }
 };
 
-manageClasses();
