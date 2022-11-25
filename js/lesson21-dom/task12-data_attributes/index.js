@@ -11,5 +11,3 @@ export const squaredNumbers = () => {
   const numberOfThirdElem = Object.values(thirdElem.dataset);
   thirdElem.dataset.squaredNumber = numberOfThirdElem[0] ** 2;
 };
-
-squaredNumbers();
