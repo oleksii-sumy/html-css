@@ -1,5 +1,5 @@
 export const finishForm = () => {
-  const inputElem = document.querySelector('input');
-  inputElem.setAttribute('placeholder', 'name="login"');
-  inputElem.setAttribute('type', 'password');
-  };
+  const element = document.querySelector('input');
+  element.setAttribute('name', 'login');
+  element.setAttribute('type', 'password');
+};
