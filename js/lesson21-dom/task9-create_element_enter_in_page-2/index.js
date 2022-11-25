@@ -3,11 +3,6 @@ export const finishList = () => {
   firstElem.textContent = 1;
   const placeForFirst = document.querySelector('.list');
   placeForFirst.prepend(firstElem);
-  
-  const eightElem = document.createElement('li');
-  eight.textContent = 8;
-  const placeForEight = document.querySelector('.list');
-  placeForEight.append(eightElem);
 
   const fourthElem = document.createElement('li');
   fourthElem.textContent = 4;
@@ -18,4 +13,10 @@ export const finishList = () => {
   sixElem.textContent = 6;
   const placeForSix = document.querySelector('.special');
   placeForSix.after(sixElem);
+
+  const eightElem = document.createElement('li');
+  eightElem.textContent = 8;
+  const placeForEight = document.querySelector('.list');
+  placeForEight.append(eightElem);
 };
+
