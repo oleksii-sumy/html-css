@@ -1,5 +1,4 @@
 //-----attach-handlers-btn-----//
-const attachHandlers = () => {
   const divElem = document.querySelector('.rect_div');
   const pElem = document.querySelector('.rect_p');
   const spanElem = document.querySelector('.rect_span');
@@ -26,9 +25,10 @@ const attachHandlers = () => {
   spanElem.addEventListener('click', logGreenSpan);
 
   
-};
-const attachHandlersBtn = document.querySelector('.attach-handlers-btn');
-attachHandlersBtn.addEventListener('click', attachHandlers);
+
+// const attachHandlers = () => {};
+// const attachHandlersBtn = document.querySelector('.attach-handlers-btn');
+// attachHandlersBtn.addEventListener('click', attachHandlers);
 
 //-----clear-btn-----//
 const clearEvents = () => {
