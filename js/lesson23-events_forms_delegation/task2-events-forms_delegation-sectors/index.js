@@ -62,4 +62,3 @@ const onSeatSelect = event => {
   selectedSeatElem.textContent = `S ${sectorNumber} - L ${lineNumber} - S ${seatNumber}`;
 };
 arenaElem.addEventListener('click', onSeatSelect);
-renderArena();
