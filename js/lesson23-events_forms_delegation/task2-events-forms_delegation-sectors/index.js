@@ -31,7 +31,7 @@ const getSectorLines = () => {
     )
     .join('');
 };
-// const arenaElem = document.querySelector('.arena');
+const arenaElem = document.querySelector('.arena');
 
 const renderArena = () => {
   const linesString = getSectorLines();
