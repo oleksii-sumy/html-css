@@ -1,6 +1,6 @@
 const generateNumbersRange = (from, to) => {
   const result = [];
-  for (i = from; i <= to; i++) {
+  for (let i = from; i <= to; i++) {
     result.push(i);
   }
   return result;
@@ -66,13 +66,4 @@ document.addEventListener('DOMContentLoaded', () => {
   renderArena();
 });
 
-const initHandlers = () => {
-  const arenaElem = document.querySelector('.arena');
-
-  arenaElem.addEventListener('click', onSeatSelect);
-};
-
-document.addEventListener('DOMContentLoaded', () => {
-  renderArena();
-  initHandlers();
-});
+arenaElem.addEventListener('click', onSeatSelect);
