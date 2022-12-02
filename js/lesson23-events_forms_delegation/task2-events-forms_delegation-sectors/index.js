@@ -31,7 +31,7 @@ const getSectorLines = () => {
     )
     .join('');
 };
-const arenaElem = document.querySelector('.arena');
+// const arenaElem = document.querySelector('.arena');
 
 const renderArena = () => {
   const linesString = getSectorLines();
@@ -64,4 +64,15 @@ const onSeatSelect = event => {
 arenaElem.addEventListener('click', onSeatSelect);
 document.addEventListener('DOMContentLoaded', () => {
   renderArena();
+});
+
+const initHandlers = () => {
+  const arenaElem = document.querySelector('.arena');
+
+  arenaElem.addEventListener('click', onSeatSelect);
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderArena();
+  initHandlers();
 });
