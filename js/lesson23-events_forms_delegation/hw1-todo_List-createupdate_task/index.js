@@ -29,17 +29,18 @@ const renderTasks = tasksList => {
   listElem.append(...tasksElems);
 };
 //---------додавання таски
-const taskInputField = document.querySelector('input');
-// const taskFromInput = taskInputField.value;
 
 const createTask = document.querySelector('.create-task-btn');
 
-const addNewTask = event => {
-  const taskFromInput = event.target.value;
-  console.log(taskFromInput);
-  tasks.push({ text: `${taskFromInput}`, done: false, id: Math.floor(Math.random(6) * 20) });
+const addNewTask = () => {
+  listElem.innerHTML = '';
+  const taskInputField = document.querySelector('input');
+  const taskFromInput = taskInputField.value;
+
+  tasks.push({ text: taskFromInput, done: false, id: Math.floor(Math.random(6) * 20) });
   console.log(tasks);
   taskInputField.value = '';
+  renderTasks(tasks);
 };
 createTask.addEventListener('click', addNewTask);
 
