@@ -36,7 +36,9 @@ const addNewTask = () => {
   listElem.innerHTML = '';
   const taskInputField = document.querySelector('input');
   const taskFromInput = taskInputField.value;
-
+if (taskFromInput.length === 0) {
+  return renderTasks(tasks);
+}
   tasks.push({ text: taskFromInput, done: false, id: Math.floor(Math.random(6) * 20) });
   console.log(tasks);
   taskInputField.value = '';
