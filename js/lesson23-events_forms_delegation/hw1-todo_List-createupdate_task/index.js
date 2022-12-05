@@ -62,6 +62,6 @@ const onToggleTask = e => {
   renderTasks(tasks);
 };
 
-const checkboxElem = document.querySelector('input');
-checkboxElem.addEventListener('click', onToggleTask);
+listElem.addEventListener('click', onToggleTask);
+
 
