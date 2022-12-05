@@ -36,9 +36,9 @@ const addNewTask = () => {
   listElem.innerHTML = '';
   const taskInputField = document.querySelector('input');
   const taskFromInput = taskInputField.value;
-if (taskFromInput.length === 0) {
-  return renderTasks(tasks);
-}
+  if (taskFromInput.length === 0) {
+    return renderTasks(tasks);
+  }
   tasks.push({ text: taskFromInput, done: false, id: Math.floor(Math.random(6) * 20) });
   console.log(tasks);
   taskInputField.value = '';
@@ -48,22 +48,14 @@ createTask.addEventListener('click', addNewTask);
 
 //---------------перевірка чекбокса
 
-const checkboxElem = document.querySelector('.list__item-checkbox');
-
-const changeDone = event => {
-  const isCheckbox = event.target.classList.contains('list__item-checkbox');
-  if (!isCheckbox) return;
-
-  const checkedEl = Number(event.target.dataset.id);
-  tasks.forEach(task => {
-    if (task.id === checkedEl) {
-      task.done = task.done === true ? false : true;
-    }
-    listElem.innerHTML = '';
-  });
-  renderTasks(tasks);
-};
-
-listElem.addEventListener('click', changeDone);
-
 renderTasks(tasks);
+
+function statusCheckbox(event) {
+  const listItemElem = document.querySelector('input');
+  if (event.target.checked) {
+    listItemElem.classList.add('list__item_done');
+  } 
+  else listItemElem.classList.remove('list__item_done');
+}
+const checkboxElem = document.querySelector('li');
+checkboxElem.addEventListener('change', statusCheckbox);
