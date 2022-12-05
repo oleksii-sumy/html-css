@@ -63,5 +63,5 @@ const onToggleTask = e => {
 };
 
 const checkboxElem = document.querySelector('input');
-checkboxElem.addEventListener('change', onToggleTask);
+checkboxElem.addEventListener('click', onToggleTask);
 
