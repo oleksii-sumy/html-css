@@ -50,12 +50,18 @@ createTask.addEventListener('click', addNewTask);
 
 renderTasks(tasks);
 
-function statusCheckbox(event) {
-  const listItemElem = document.querySelector('input');
-  if (event.target.checked) {
-    listItemElem.classList.add('list__item_done');
-  } 
-  else listItemElem.classList.remove('list__item_done');
-}
-const checkboxElem = document.querySelector('li');
-checkboxElem.addEventListener('change', statusCheckbox);
+const onToggleTask = e => {
+  const isCheckbox = e.target.classList.contains('list__item-checkbox');
+
+  if (!isCheckbox) {
+    return;
+  }
+
+  const taskData = tasks.find(task => task.id === e.target.dataset.id);
+  Object.assign(taskData, { done: e.target.checked });
+  renderTasks(tasks);
+};
+
+const checkboxElem = document.querySelector('input');
+checkboxElem.addEventListener('change', onToggleTask);
+
