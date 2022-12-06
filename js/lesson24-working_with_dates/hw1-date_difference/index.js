@@ -1,6 +1,7 @@
+
 export const getDiff = (startDate, endDate) => {
 let result;
-const diffDate = Math.abs((new Date(startDate).getTime() - new Date(endDate).getTime()));
+const diffDate = (new Date(startDate).getTime() - new Date(endDate).getTime());
 const daysData = Math.trunc(diffDate / 86400000);
 // console.log(daysData);
 const hoursData = Math.trunc((diffDate - daysData) / 3600000);
@@ -14,4 +15,7 @@ return result;
 }
 
 getDiff(new Date(2024, 11, 5, 23, 15, 7), new Date(2021, 0, 23, 10, 8, 7));
+
+
+
 
