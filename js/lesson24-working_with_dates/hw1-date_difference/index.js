@@ -9,10 +9,10 @@ export const getDiff = (startDate, endDate) => {
   result = `${daysData}d ${hoursData}h ${minutesData}m ${secondsData}s`;
   return result;
 };
-// getDiff(
-//   new Date(Date.UTC(2019, 10, 24, 20, 50, 34, 44)),
-//   new Date(Date.UTC(2019, 1, 22, 17, 52, 18)),
-// );
+getDiff(
+  new Date(Date.UTC(2019, 10, 24, 20, 50, 34, 44)),
+  new Date(Date.UTC(2019, 1, 22, 17, 52, 18)),
+);
 
 
 
