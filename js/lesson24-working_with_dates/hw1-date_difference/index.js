@@ -1,6 +1,6 @@
 export const getDiff = (startDate, endDate) => {
 let result;
-const diffDate = (new Date(startDate).getTime() - new Date(endDate).getTime());
+const diffDate = Math.abs((new Date(startDate).getTime() - new Date(endDate).getTime()));
 const daysData = Math.trunc(diffDate / 86400000);
 // console.log(daysData);
 const hoursData = Math.trunc((diffDate - daysData) / 3600000);
