@@ -1,7 +1,7 @@
 
 export const getDiff = (startDate, endDate) => {
   let result;
-  const diffDate = Math.abs(startDate).getTime() - new Date(endDate).getTime());
+  const diffDate = Math.abs(startDate - endDate);
   const daysData = Math.trunc(diffDate / 86400000);
   const hoursData = new Date(diffDate).getUTCHours();
   const minutesData = new Date(diffDate).getUTCMinutes();
