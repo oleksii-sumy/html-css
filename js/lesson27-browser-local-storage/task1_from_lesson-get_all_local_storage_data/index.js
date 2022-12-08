@@ -10,7 +10,7 @@ newValue = JSON.parse(value);
   } catch(e) {
     newValue = value;
   }
-  return {...acc, [key]: value };
+  return {...acc, [key]: newValue };
 }, {});
   };
 
