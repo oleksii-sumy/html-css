@@ -14,4 +14,4 @@ newValue = JSON.parse(value);
 }, {});
   };
 
-  getLocalStorageData();
+//   getLocalStorageData();
