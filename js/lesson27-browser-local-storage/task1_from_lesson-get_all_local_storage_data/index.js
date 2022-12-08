@@ -1,5 +1,5 @@
-localStorage.setItem('name', JSON.stringify('Tom'));
-localStorage.setItem('hobbies', JSON.stringify({name:'Tom'}));
+// localStorage.setItem('name', JSON.stringify('Tom'));
+// localStorage.setItem('hobbies', JSON.stringify({name:'Tom'}));
 
 
 export const getLocalStorageData = () => {
@@ -10,7 +10,7 @@ newValue = JSON.parse(value);
   } catch(e) {
     newValue = value;
   }
-  return { ...acc, [key]: value };
+  return {...acc, [key]: value };
 }, {});
   };
 
