@@ -14,4 +14,6 @@ export const onToggleTask = e => {
   Object.assign(taskData, { done: e.target.checked });
   renderTasks(tasks);
 };
+//     const listElem = document.querySelector('.list');
+
 // listElem.addEventListener('click', onToggleTask);
