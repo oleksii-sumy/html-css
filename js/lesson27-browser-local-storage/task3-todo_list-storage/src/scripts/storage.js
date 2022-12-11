@@ -5,3 +5,9 @@ export const tasks = [
   { text: 'Visit doctor', done: true, id: '4' },
   { text: 'Buy meat', done: true, id: '5' },
 ];
+
+export const setItem = (key, value) => {
+  localStorage.setItem(key, JSON.stringify(value));
+}
+
+export const getItem = key => JSON.parse(localStorage.getItem(key));
