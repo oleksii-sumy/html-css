@@ -1,8 +1,5 @@
-import { tasks } from './storage.js';
-import { renderTasks } from './tasklists.js';
+import { renderTasks } from './render.js';
 import { getItem, setItem } from './storage.js';
-
-
 
 export const onToggleTask = e => {
   const isCheckbox = e.target.classList.contains('list__item-checkbox');
@@ -10,15 +7,20 @@ export const onToggleTask = e => {
   if (!isCheckbox) {
     return;
   }
-tasks = localStorage.getItem('tasksList');
+  const tasksList = getItem('tasksList');
+  const newTasksList = tasksList.map(task => {
+    if (task.id === e.target.dataset.id) {
+      const done = e.target.checked;
+      return {
+        ...task,
+        done,
+        finishDate: done ? new Date().toISOString() : null,
+      };
+    }
 
-  const taskData = tasks.find(task => task.id === e.target.dataset.id);
-  Object.assign(taskData, { done: e.target.checked });
+    return task;
+  });
+  setItem('tasksList', newTasksList);
 
-  setItem('taskList', tasks);
-
-  renderTasks(tasks);
+  renderTasks();
 };
-//     const listElem = document.querySelector('.list');
-
-// listElem.addEventListener('click', onToggleTask);
