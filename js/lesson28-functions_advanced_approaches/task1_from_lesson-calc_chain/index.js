@@ -24,5 +24,4 @@ const calc = initeValue => {
   };
   return calculator;
 };
-const result = calc(3).add(2).div(10).subtract(5).result();
-console.log(result);
+
