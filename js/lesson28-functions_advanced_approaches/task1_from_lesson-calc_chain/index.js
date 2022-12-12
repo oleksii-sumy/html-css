@@ -6,15 +6,15 @@ const calc = initeValue => {
       result += number;
       return calculator;
     },
-    substract(number) {
+    subtract(number) {
       result -= number;
       return this;
     },
-    mult(value) {
+    mult(number) {
       result *= number;
       return this;
     },
-    div(value) {
+    div(number) {
       result /= number;
       return this;
     },
@@ -24,5 +24,5 @@ const calc = initeValue => {
   };
   return calculator;
 };
-const result = calc(3).add(2).div(10).substract(5).result();
+const result = calc(3).add(2).div(10).subtract(5).result();
 console.log(result);
