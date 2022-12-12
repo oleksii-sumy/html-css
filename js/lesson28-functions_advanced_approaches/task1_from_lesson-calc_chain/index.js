@@ -1,5 +1,5 @@
-const calc = initeValue => {
-  let result = initeValue;
+const calc = number => {
+  let result = number;
 
   const calculator = {
     add(number) {
