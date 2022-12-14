@@ -1,5 +1,5 @@
 export const shmoment = inputDate => {
-  let resultDate = inputDate;
+  let resultDate = new Date(inputDate);
 
 
   const getIntervalDate = {
