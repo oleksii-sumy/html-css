@@ -3,8 +3,8 @@ export const shmoment = inputDate => {
 
 
   const getIntervalDate = {
-    years: 'getYears',
-    months: 'getMonths',
+    years: 'getFullYear',
+    months: 'getMonth',
     days: 'getDate',
     hours: 'getHours',
     minutes: 'getMinutes',
@@ -14,8 +14,8 @@ export const shmoment = inputDate => {
 
 
   const setIntervalDate = {
-    years: 'setYears',
-    months: 'setMonths',
+    years: 'setFullYear',
+    months: 'setMonth',
     days: 'setDate',
     hours: 'setHours',
     minutes: 'setMinutes',
