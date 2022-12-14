@@ -1,87 +1,61 @@
-const shmoment = inputDate => {
+export const shmoment = inputDate => {
   let resultDate = inputDate;
+
+  const getYears = inputDate.getFullYear();
+  const getMonths = inputDate.getMonth();
+  const getDays = inputDate.getDate();
+  const getHours = inputDate.getHours();
+  const getMinutes = inputDate.getMinutes();
+  const getSeconds = inputDate.getSeconds();
+  const getMilliseconds = inputDate.getMilliseconds();
+
   const getIntervalDate = {
-    years: inputDate.getFullYear(),
-    months: inputDate.getMonth(),
-    days: inputDate.getDate(),
-    hours: inputDate.getHours(),
-    minutes: inputDate.getMinutes,
-    seconds: inputDate.getSeconds,
-    milliseconds: inputDate.getMilliseconds,
-  };
-  console.log(getIntervalDate);
-
-  const newIntervalDate = {
-    years: inputDate.getFullYear(),
-    months: inputDate.getMonth(),
-    days: inputDate.getDate(),
-    hours: inputDate.getHours(),
-    minutes: inputDate.getMinutes,
-    seconds: inputDate.getSeconds,
-    milliseconds: inputDate.getMilliseconds,
+    years: getYears,
+    months: getMonths,
+    days: getDays,
+    hours: getHours,
+    minutes: getMinutes,
+    seconds: getSeconds,
+    milliseconds: getMilliseconds,
   };
 
-  const changeMethodDate = {
+  const setYears = inputDate.setFullYear();
+  const setMonths = inputDate.setMonth();
+  const setDays = inputDate.setDate();
+  const setHours = inputDate.setHours();
+  const setMinutes = inputDate.setMinutes();
+  const setSeconds = inputDate.setSeconds();
+  const setMilliseconds = inputDate.setMilliseconds();
+
+  const setIntervalDate = {
+    years: setYears,
+    months: setMonths,
+    days: setDays,
+    hours: setHours,
+    minutes: setMinutes,
+    seconds: setSeconds,
+    milliseconds: setMilliseconds,
+  };
+
+  const addSubtractMethods = {
     add(interval, number) {
-      const searchInterval = Object.entries(getIntervalDate).filter(elem => elem[0] === interval);
-      console.log(searchInterval);
-      if (searchInterval === 'years') {
-        newIntervalDate.interval = inputDate.setFullYear(inputDate + number);
-      }
-      if (searchInterval === 'months') {
-        newIntervalDate.interval = inputDate.setMonth(inputDate + number);
-      }
-      if (searchInterval === 'days') {
-        newIntervalDate.interval = inputDate.setDate(inputDate + number);
-      }
-      if (searchInterval === 'hours') {
-        newIntervalDate.interval = inputDate.setHours(inputDate + number);
-      }
-      if (searchInterval === 'minutes') {
-        newIntervalDate.interval = inputDate.setMinutes(inputDate + number);
-      }
-      if (searchInterval === 'seconds') {
-        newIntervalDate.interval = inputDate.setMinutes(inputDate + number);
-      }
-      if (searchInterval === 'milliseconds') {
-        newIntervalDate.interval = inputDate.setMilliseconds(inputDate + number);
-      }
-      return changeMethodDate;
+      const currentUnitValue = resultDate[getIntervalDate[interval]]();
+      console.log(currentUnitValue);
+      setIntervalDate.currentUnitValue(currentUnitValue + number);
+      return addSubtractMethods;
     },
-
-    // subtract(interval, number) {
-    //   const searchInreval = Object.entries(getIntervalDate).filter(elem => {
-    //     if (elem[0] === 'years') {
-    //       newIntervalDate.interval = inputDate.setFullYear(inputDate - number);
-    //     }
-    //     if (elem[0] === 'manths') {
-    //       newIntervalDate.interval = inputDate.setMonth(inputDate - number);
-    //     }
-    //     if (elem[0] === 'days') {
-    //       newIntervalDate.interval = inputDate.setDate(inputDate - number);
-    //     }
-    //     if (elem[0] === 'hours') {
-    //       newIntervalDate.interval = inputDate.setHours(inputDate - number);
-    //     }
-    //     if (elem[0] === 'minutes') {
-    //       newIntervalDate.interval = inputDate.seMinutes(inputDate - number);
-    //     }
-    //     if (elem[0] === 'seconds') {
-    //       newIntervalDate.interval = inputDate.seMinutes(inputDate - number);
-    //     }
-    //     if (elem[0] === 'milliseconds') {
-    //       newIntervalDate.interval = inputDate.seMilliseconds(inputDate - number);
-    //     }
-    //     return changeMethodDate;
-    //   });
-    // },
+    Subtract(interval, number) {
+      const currentUnitValue = resultDate[getIntervalDate[interval]]();
+      setIntervalDate.currentUnitValue(currentUnitValue - number);
+      return addSubtractMethods;
+    },
     result() {
-      return Object.values(newIntervalDate).join(' ');
+      return Object.values(setIntervalDate);
     },
   };
-  console.log(newIntervalDate);
 
-  return changeMethodDate;
+  return addSubtractMethods;
 };
 const res = shmoment(new Date(2022, 11, 12, 14, 15)).add('days', 2).result();
 console.log(res);
+
