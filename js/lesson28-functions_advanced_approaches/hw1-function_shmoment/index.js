@@ -44,7 +44,7 @@ export const shmoment = inputDate => {
       setIntervalDate.currentUnitValue(currentUnitValue + number);
       return addSubtractMethods;
     },
-    Subtract(interval, number) {
+    subtract(interval, number) {
       const currentUnitValue = resultDate[getIntervalDate[interval]]();
       setIntervalDate.currentUnitValue(currentUnitValue - number);
       return addSubtractMethods;
@@ -56,6 +56,5 @@ export const shmoment = inputDate => {
 
   return addSubtractMethods;
 };
-const res = shmoment(new Date(2022, 11, 12, 14, 15)).add('days', 2).result();
-console.log(res);
+
 
