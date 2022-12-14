@@ -23,24 +23,23 @@ export const shmoment = inputDate => {
     milliseconds: 'setMilliseconds',
   };
 
-  const addSubtractMethods = {
-    add(interval, number) {
-      const currentUnitValue = resultDate[getIntervalDate[interval]]();
-      console.log(currentUnitValue);
-      setIntervalDate.currentUnitValue(currentUnitValue + number);
-      return addSubtractMethods;
-    },
-    Subtract(interval, number) {
-      const currentUnitValue = resultDate[getIntervalDate[interval]]();
-      setIntervalDate.currentUnitValue(currentUnitValue - number);
-      return addSubtractMethods;
-    },
-    result() {
-      return Object.values(setIntervalDate);
-    },
-  };
-
+const addSubtractMethods = {
+  add(interval, number) {
+    const currentUnitValue = resultDate[getIntervalDate[interval]]();
+    resultDate = new Date(resultDate[setIntervalDate[interval]](currentUnitValue + number));
+    return addSubtractMethods;
+  },
+  subtract(interval, number) {
+    const currentUnitValue = resultDate[getIntervalDate[interval]]();
+    resultDate = new Date(resultDate[setIntervalDate[interval]](currentUnitValue - number));
+    return addSubtractMethods;
+  },
+  result() {
+    return resultDate;
+  },
+};
   return addSubtractMethods;
 };
-
+const res = shmoment(new Date(2022, 11, 12, 14, 15)).add('days', 2).result();
+console.log(res);
 
