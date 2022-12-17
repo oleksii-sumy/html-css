@@ -20,6 +20,8 @@ return firstPromise;
 
 const resultAddImage = addImage(imgSrc);
 resultAddImage.then(data => console.log(data));
+resultAddImage.catch(error => console.log(data));
+
 // examples
 // addImage(
 //   'https://p.bigstockphoto.com/GeFvQkBbSLaMdpKXF1Zv_bigstock-Aerial-View-Of-Blue-Lakes-And--227291596.jpg',
