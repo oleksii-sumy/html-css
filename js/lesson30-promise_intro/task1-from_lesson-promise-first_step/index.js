@@ -1,4 +1,4 @@
- export const addImage = (imgSrc) => {
+const addImage = (imgSrc) => {
     const firstPromise = new Promise ((solution,errMessage) => {
   const imgElem = document.createElement('img');
   imgElem.setAttribute('alt', 'My photo');
@@ -20,7 +20,7 @@ return firstPromise;
 
 const resultAddImage = addImage(imgSrc);
 resultAddImage.then(data => console.log(data));
-resultAddImage.catch(error => console.log(data));
+// resultAddImage.catch(error => console.log(data));
 
 // examples
 // addImage(
