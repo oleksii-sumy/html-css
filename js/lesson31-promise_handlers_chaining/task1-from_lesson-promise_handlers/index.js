@@ -6,7 +6,7 @@ export const requestUserData = userId => {
       }, 500);
     } else {
       setTimeout(() => {
-        resolve({
+        rulfilled({
           name: 'John',
           age: 17,
           userId,
