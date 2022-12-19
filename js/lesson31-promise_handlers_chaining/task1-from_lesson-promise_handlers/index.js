@@ -1,5 +1,5 @@
 export const requestUserData = userId => {
-  const request = new Promise((resolve, reject) => {
+  const request = new Promise((rulfilled, reject) => {
     if (userId === 'broken') {
       setTimeout(() => {
         reject(new Error('User not found'));
