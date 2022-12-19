@@ -15,7 +15,6 @@ export const requestUserData = userId => {
       }, 1000);
     }
   });
-
   return request;
 };
-request(userid777).then(data => console.log(data));
+requestUserData(userid777).then(data => console.log(data));
