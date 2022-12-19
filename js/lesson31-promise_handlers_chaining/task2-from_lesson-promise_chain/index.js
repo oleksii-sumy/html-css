@@ -17,6 +17,6 @@ export const asyncCalculator = numbr =>
     )
     .then(value => {
       const result = value * 2;
-      console.log(`Squared value: ${result}`);
+      console.log(`Doubled value: ${result}`);
       return result;
     });
