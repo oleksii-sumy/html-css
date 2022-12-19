@@ -20,7 +20,7 @@ return firstPromise;
 
 const resultAddImage = addImage(imgSrc);
 resultAddImage.then(data => console.log(data));
-// resultAddImage.catch(error => console.log(data));
+resultAddImage.catch(error => console.log(data));
 
 // examples
 // addImage(
