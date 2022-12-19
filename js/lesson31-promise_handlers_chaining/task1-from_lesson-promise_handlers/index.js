@@ -18,3 +18,4 @@ export const requestUserData = userId => {
 
   return request;
 };
+request(userid777).then(data => console.log(data));
