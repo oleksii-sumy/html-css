@@ -17,7 +17,7 @@ const request = url =>
   });
 
 export const getUserASAP = iserId => {
-  const userUrls = servers.map(serverUrl => `${serverUrl}/${serverUrl}`);
+  const userUrls = servers.map(serverUrl => `${serverUrl}/${iserId}`);
 
   const requests = userUrls.map(userUrl => request(userUrl));
   return Promise.race(requests);
