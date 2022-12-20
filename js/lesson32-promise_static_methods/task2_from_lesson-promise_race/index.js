@@ -5,17 +5,15 @@ const getRandomNUmber = (from, to) => from + Math.random() * (to - from);
 const request = url =>
   new Promise(resolve => {
     const randomDelay = getRandomNUmber(1000, 3000);
-    setTimeout(
-      () =>
-        resolve({
-          userData: {
-            name: 'Tom',
-            age: 17,
-          },
-          sourse: url,
-        }),
-      randomDelay,
-    );
+    setTimeout(() => {
+      resolve({
+        userData: {
+          name: 'Tom',
+          age: 17,
+        },
+        sourse: url,
+      });
+    }, randomDelay);
   });
 
 export const getUserASAP = iserId => {
