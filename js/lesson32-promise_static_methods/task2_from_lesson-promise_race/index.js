@@ -11,7 +11,7 @@ const request = url =>
           name: 'Tom',
           age: 17,
         },
-        sourse: url,
+        source: url,
       });
     }, randomDelay);
   });
@@ -22,3 +22,4 @@ export const getUserASAP = iserId => {
   const requests = userUrls.map(userUrl => request(userUrl));
   return Promise.race(requests);
 };
+
