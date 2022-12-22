@@ -4,6 +4,7 @@ const userLocationElem = document.querySelector('.user__location');
 
 const defaultAvatar = 'https://avatars3.githubusercontent.com/u1001';
 
+userAvatarElem.src = defaultAvatar;
 
 
 const fetchUserData = userName => {
