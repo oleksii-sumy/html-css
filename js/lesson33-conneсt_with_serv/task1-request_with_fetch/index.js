@@ -3,7 +3,6 @@ const userNameElem = document.querySelector('.user__name');
 const userLocationElem = document.querySelector('.user__location');
 
 const defaultAvatar = 'https://avatars3.githubusercontent.com/u1001';
-
 userAvatarElem.src = defaultAvatar;
 
 
@@ -25,7 +24,8 @@ const userNameInputElem = document.querySelector('.name-form__input');
 
 const onSearchUser = () => {
     const userName = userNameInputElem.value;
-    fetchUserData(userName);
+    fetchUserData(userName)
+    .then(userData => renderUserData(userData));
 };
 
 showUserBtnElem.addEventListener('click', onSearchUser);
