@@ -14,12 +14,7 @@ export function createUser(userData) {
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
-    body: JSON.stringify({
-      email,
-      firstName,
-      lastName,
-      age,
-    }),
+    body: JSON.stringify(userData)
   });
 }
 
