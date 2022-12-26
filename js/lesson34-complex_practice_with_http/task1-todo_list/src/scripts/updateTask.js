@@ -27,14 +27,6 @@ export const onToggleTask = e => {
       setItem('tasksList', newTasksList);
       renderTasks();
     });
-
-  deleteTask(taskId)
-    .then(() => getTasksList())
-    .then(newTasksList => {
-      setItem('tasksList', newTasksList);
-      renderTasks();
-    });
-
 };
 
 // Algo:

@@ -1,6 +1,6 @@
 import { onCreateTask } from './createtask.js';
 import { onToggleTask } from './updateTask.js';
-import { deleteTask } from './deleteTask.js';
+import { deletTask } from './deleteTask.js';
 
 export const initTodoListHandlers = () => {
   const createBtnElem = document.querySelector('.create-task-btn');
@@ -10,6 +10,6 @@ export const initTodoListHandlers = () => {
   todoListElem.addEventListener('click', onToggleTask);
 
     const toDeletElem = document.querySelector('.list-item__delete-btn');
-    toDeletElem.addEventListener('click', deleteTask);
+    toDeletElem.addEventListener('click', deletTask);
 
 };
