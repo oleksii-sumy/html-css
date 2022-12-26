@@ -5,7 +5,7 @@ import { deleteFromServ } from './tasksGateway.js';
 
 
 export const deletTask = e => {
-  const isDeletebox = e.target.classList.contains('list-item__delete-btn');
+  const isDeletebox = e.target.classList.contains('list-item__checkbox');
 
   if (!isDeletebox) {
     return;
@@ -19,3 +19,4 @@ export const deletTask = e => {
       renderTasks();
     });
 };
+
