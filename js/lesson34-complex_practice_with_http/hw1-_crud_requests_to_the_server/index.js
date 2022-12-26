@@ -20,7 +20,7 @@ export function createUser(userData) {
       lastName,
       age,
     }),
-  }).then(response => response.json());
+  });
 }
 
 export function deleteUser(userId) {
