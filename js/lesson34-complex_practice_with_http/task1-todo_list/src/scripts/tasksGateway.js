@@ -1,12 +1,12 @@
 const baseUrl = 'https://63a6c3fc59fd83b1bb3777cf.mockapi.io/todolist/tasks';
 
-const mapTasks = tasks => {
-  tasks.map(({ _id, ...rest }) => ({ ...rest, id: _id }));
-};
+// const mapTasks = tasks => {
+//   tasks.map(({ _id, ...rest }) => ({ ...rest, id: _id }));
+// };
 
 export const getTasksList = () => fetch(baseUrl)
     .then(response => response.json())
-    .then(tasks => mapTasks(tasks));
+    
 
 
 export const createTask = taskData => {
