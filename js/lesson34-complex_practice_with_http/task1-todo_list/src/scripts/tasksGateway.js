@@ -25,7 +25,7 @@ export const updateTask = (taskId, updatedTaskData) => {
   });
 };
 
-export const deleteTask = taskId => {
+export const deleteFromServ = taskId => {
   return fetch(`${baseUrl}/${taskId}`, {
     method: 'DELETE',
   });

@@ -1,7 +1,7 @@
 import { renderTasks } from './render.js';
 import { setItem } from './storage.js';
 import { getTasksList} from './tasksGateway.js';
-import { deleteTask } from './tasksGateway.js';
+import { deleteFromServ } from './tasksGateway.js';
 
 
 export const deletTask = e => {
@@ -12,7 +12,7 @@ export const deletTask = e => {
   }
   const taskId = e.target.dataset.id;
 
-  deleteTask(taskId)
+  deleteFromServ(taskId)
     .then(() => getTasksList())
     .then(newTasksList => {
       setItem('tasksList', newTasksList);
