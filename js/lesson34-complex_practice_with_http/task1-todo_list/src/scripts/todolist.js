@@ -9,7 +9,7 @@ export const initTodoListHandlers = () => {
   const todoListElem = document.querySelector('.list');
   todoListElem.addEventListener('click', onToggleTask);
 
-    const toDeletElem = document.querySelector('.list-item__delete-btn');
+    const toDeletElem = document.querySelector('.list');
     toDeletElem.addEventListener('click', deletTask);
 
 };

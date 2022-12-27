@@ -31,7 +31,6 @@ const createListItem = ({ text, done, id }) => {
   if (done) {
     listItemElem.classList.add('list-item_done');
   }
-  
   const textElem = document.createElement('span');
   textElem.classList.add('list-item__text');
   textElem.textContent = text;
