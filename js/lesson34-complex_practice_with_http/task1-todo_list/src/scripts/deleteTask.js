@@ -8,13 +8,12 @@ export const deletTask = e => {
   if (!isDeletebox) {
     return;
   }
-
   const taskId = e.target.dataset.id;
 
-  getTasksList()
-    .then(tasklist => tasklist.find(task => task.id === taskId))
-    .then(task => task.id)
-    .then(delTask => deleteFromServ(delTask))
-    .then(() => getTasksList());
-  renderTasks();
+  deleteFromServ(taskId)
+    .then(() => getTasksList())
+    .then(newTasksList => {
+      setItem('tasksList', newTasksList);
+      renderTasks();
+    });
 };
