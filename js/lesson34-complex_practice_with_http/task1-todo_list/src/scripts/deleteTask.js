@@ -9,7 +9,6 @@ export const deletTask = e => {
     return;
   }
 
-
   const taskId = e.target.dataset.id;
 
   getTasksList()
