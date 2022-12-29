@@ -28,7 +28,7 @@ const checkValidation = userData => {
 
 const submitData = boolean => {
   if (boolean === 'true') {
-    submitBtn.setAttribute('disabled', false);
+    submitBtn.setAttribute('enabled', true);
   }
 };
 const sendToServer = data => {
