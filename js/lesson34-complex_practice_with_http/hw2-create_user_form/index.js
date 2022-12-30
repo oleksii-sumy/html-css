@@ -3,6 +3,8 @@ const baseUrl = 'https://63a6c3fc59fd83b1bb3777cf.mockapi.io/todolist/userform';
 const checkValidation = () => {
   if (loginForm.reportValidity()) {
     submitBtn.removeAttribute('disabled');
+  } else {
+    submitBtn.setAttribute('disabled', true);
   }
 };
 
