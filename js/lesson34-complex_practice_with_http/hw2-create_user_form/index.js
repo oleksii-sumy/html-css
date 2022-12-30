@@ -5,7 +5,7 @@ const checkValidation = () => {
     submitBtn.removeAttribute('disabled');
   } else {
     submitBtn.setAttribute('disabled', true);
-  }
+  };
 };
 
 const sendToServer = () => {
@@ -18,10 +18,9 @@ const sendToServer = () => {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(userData),
-  })
-  .then(data => alert(fetch(baseUrl)));
+  }).then(data => alert(fetch(baseUrl)));
+  formElem.reset();
 };
-
 
 const submitBtn = document.querySelector('.submit-button');
 
@@ -30,3 +29,4 @@ loginForm.addEventListener('input', checkValidation);
 
 const sumbitEvent = document.querySelector('.submit-button');
 sumbitEvent.addEventListener('submit', sendToServer);
+
