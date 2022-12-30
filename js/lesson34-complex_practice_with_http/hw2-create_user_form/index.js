@@ -1,5 +1,8 @@
 const baseUrl = 'https://63a6c3fc59fd83b1bb3777cf.mockapi.io/todolist/userform';
 
+const submitBtn = document.querySelector('.submit-button');
+const loginForm = document.querySelector('.login-form');
+
 const checkValidation = () => {
   if (loginForm.reportValidity()) {
     submitBtn.removeAttribute('disabled');
@@ -12,6 +15,7 @@ const sendToServer = event => {
   event.preventDefault();
   const { fields } = document.forms;
   const userData = Object.fromEntries(new FormData(fields));
+console.log (userData);
   return fetch(baseUrl, {
     method: 'POST',
     headers: {
@@ -26,13 +30,10 @@ const sendToServer = event => {
     });
 };
 
-const submitBtn = document.querySelector('.submit-button');
 
-const loginForm = document.querySelector('.login-form');
 loginForm.addEventListener('input', checkValidation);
 
-const sumbitEvent = document.querySelector('form');
-sumbitEvent.addEventListener('submit', sendToServer);
+submitBtn.addEventListener('submit', sendToServer);
 
 
 
