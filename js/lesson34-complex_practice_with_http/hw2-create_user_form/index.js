@@ -13,8 +13,8 @@ const checkValidation = () => {
 
 const sendToServer = event => {
   event.preventDefault();
-  const { fields } = document.forms;
-  const userData = Object.fromEntries(new FormData(fields));
+//   const { fields } = document.forms;
+  const userData = Object.fromEntries(new FormData(forms));
 console.log (userData);
   return fetch(baseUrl, {
     method: 'POST',
@@ -34,6 +34,7 @@ console.log (userData);
 loginForm.addEventListener('input', checkValidation);
 
 submitBtn.addEventListener('submit', sendToServer);
+
 
 
 
