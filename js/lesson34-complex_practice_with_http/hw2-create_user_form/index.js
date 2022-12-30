@@ -16,10 +16,10 @@ const sendToServer = () => {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(userData),
-  });
-  formElem.reset();
-  return alert(fetch(baseUrl).then(response => response.json()));
+  })
+  .then(data => alert(fetch(baseUrl)));
 };
+
 
 const submitBtn = document.querySelector('.submit-button');
 
