@@ -19,7 +19,7 @@ console.log(userData);
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(userData),
-  }).then(() => alert(fetch(baseUrl)));
+  }).then(() => alert(fetch(baseUrl).then(response => JSON.stringify(response.json()))));
   formElem.reset();
 };
 
@@ -28,7 +28,8 @@ const submitBtn = document.querySelector('.submit-button');
 const loginForm = document.querySelector('.login-form');
 loginForm.addEventListener('input', checkValidation);
 
-const sumbitEvent = document.querySelector('button');
+const sumbitEvent = document.querySelector('form');
 sumbitEvent.addEventListener('submit', sendToServer);
+
 
 
