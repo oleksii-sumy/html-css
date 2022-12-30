@@ -8,17 +8,18 @@ const checkValidation = () => {
   };
 };
 
-const sendToServer = () => {
+const sendToServer = (event) => {
+    event.preventDefault();
   const { fields } = document.forms;
   const userData = Object.fromEntries(new FormData(fields));
-
+console.log(userData);
   fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(userData),
-  }).then(data => alert(fetch(baseUrl)));
+  }).then(() => alert(fetch(baseUrl)));
   formElem.reset();
 };
 
@@ -27,6 +28,7 @@ const submitBtn = document.querySelector('.submit-button');
 const loginForm = document.querySelector('.login-form');
 loginForm.addEventListener('input', checkValidation);
 
-const sumbitEvent = document.querySelector('.submit-button');
+const sumbitEvent = document.querySelector('button');
 sumbitEvent.addEventListener('submit', sendToServer);
+
 
