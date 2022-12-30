@@ -5,22 +5,25 @@ const checkValidation = () => {
     submitBtn.removeAttribute('disabled');
   } else {
     submitBtn.setAttribute('disabled', true);
-  };
+  }
 };
 
-const sendToServer = (event) => {
-    event.preventDefault();
+const sendToServer = event => {
+  event.preventDefault();
   const { fields } = document.forms;
   const userData = Object.fromEntries(new FormData(fields));
-console.log(userData);
-  fetch(baseUrl, {
+  return fetch(baseUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json;charset=utf-8',
     },
     body: JSON.stringify(userData),
-  }).then(() => alert(fetch(baseUrl).then(response => JSON.stringify(response.json()))));
-  formElem.reset();
+  })
+    .then(responce => responce.json())
+    .then(data => {
+      alert(JSON.stringify(data));
+      formElem.reset();
+    });
 };
 
 const submitBtn = document.querySelector('.submit-button');
