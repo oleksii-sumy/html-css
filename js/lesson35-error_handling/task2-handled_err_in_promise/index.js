@@ -15,7 +15,7 @@ failRequest
   .catch(function onError2(error) {
     console.error('onError2', error.message);
     // (2)
-        throw new Error('Sever error');
+        return new Error('Sever error');
 // throw error;
   })
   .then(function onSuccess2(data) {
