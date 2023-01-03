@@ -9,7 +9,7 @@ export const fetchUserData = userName => {
 };
 
 export const fetchRepositories = url => {
-  fetch(url)
+  return fetch(url)
   .then(response => {
     if(response.status === 200) {
     response.json();
