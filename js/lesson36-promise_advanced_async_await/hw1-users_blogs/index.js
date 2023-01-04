@@ -1,19 +1,21 @@
 export const getUsersBlogs = users => {
+  let resLinks;
   try {
-    const urlsList = users
-    .map(async url => {
-        await fetch(`https://api.github.com/users/${url}`);
+    const urlsList = users.map(async url => {
+      await fetch(`https://api.github.com/users/${url}`);
 
-            if (!urlsList.ok) {
-      return new Promise.reject('Failed to load data');
-    }
+      if (!urlsList.ok) {
+        resLinks = new Error('Failed to load data');
+      }
     });
-
-    return Promise.all(urlsList.forEach(links => links.blog));
+    resLinks = Promise.all(urlsList.forEach(links => links.blog));
   } catch (err) {
-    return err.message;
+    throw err.message;
+  } finally {
+    return resLinks;
   }
 };
+
 
 // examples
 // getUsersBlogs(['google', 'facebook', 'reactjs']).then(linksList => console.log(linksList)); // ==> ["https://opensource.google/", "https://opensource.fb.com", "https://reactjs.org"]
