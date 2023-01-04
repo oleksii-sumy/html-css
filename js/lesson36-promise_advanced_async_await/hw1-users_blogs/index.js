@@ -7,7 +7,9 @@ export const getUsersBlogs = async users => {
      const userData = fetch(`https://api.github.com/users/${user}`)
        .then(response => response.json())
        .then(response => response.blog)
-       .catch((err) => err.message);
+       .catch((err) => {
+       return Promise.reject(new Error(err.message)); 
+       });
         return userData;
     });
     resLinks = await Promise.all(usersData);
@@ -17,6 +19,7 @@ export const getUsersBlogs = async users => {
     return resLinks;
   }
 };
+
 
 
 
