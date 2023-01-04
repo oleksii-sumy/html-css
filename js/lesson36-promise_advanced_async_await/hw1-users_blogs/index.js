@@ -4,8 +4,9 @@ export const getUsersBlogs = async users => {
   
     const usersData = users
     .map(user => {
-     const userData= fetch(`https://api.github.com/users/${user}`)
-     .then(response => response.blog)
+     const userData = fetch(`https://api.github.com/users/${user}`)
+       .then(response => response.json())
+       .then(response => response.blog);
         return userData;
     });
     resLinks = await Promise.all(usersData);
@@ -15,6 +16,7 @@ export const getUsersBlogs = async users => {
     return resLinks;
   }
 };
+
 
 
 // examples
