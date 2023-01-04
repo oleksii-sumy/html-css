@@ -3,26 +3,18 @@ export const getUsersBlogs = async users => {
   try {
     const usersData = users.map(user => {
       const userData = fetch(`https://api.github.com/users/${user}`)
-        .then(response => {
-          if (!response.ok) {
-            throw new Error('Failed to load data');
-          }
-          return response.json();
-        })
-        .then(response => response.blog)
         .catch(err => {
           return Promise.reject(new Error(err.message));
-        });
+        })
+        .then(response => response.json())
+        .then(response => response.blog);
       return userData;
     });
     resLinks = await Promise.all(usersData);
   } catch (err) {
-    resLinks = err.message;
-  } finally {
-    return resLinks;
-  }
+    throw new Error('Failed to load data');
+  } 
 };
-
 
 
 
