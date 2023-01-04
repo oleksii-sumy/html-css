@@ -1,20 +1,24 @@
 export const getUsersBlogs = users => {
   let resLinks;
   try {
-    const urlsList = users.map(async url => {
-      await fetch(`https://api.github.com/users/${url}`);
-
-      if (!urlsList.ok) {
+  
+    const usersData = users
+    .map(async user => {
+     const userData= await fetch(`https://api.github.com/users/${user}`);
+      if (!userData.ok) {
         resLinks = new Error('Failed to load data');
       }
+        return userData;
     });
-    resLinks = Promise.all(urlsList.forEach(links => links.blog));
+    resLinks = Promise.all(usersData.forEach(user => user.blog));
   } catch (err) {
     throw err.message;
   } finally {
     return resLinks;
   }
 };
+
+
 
 
 // examples
