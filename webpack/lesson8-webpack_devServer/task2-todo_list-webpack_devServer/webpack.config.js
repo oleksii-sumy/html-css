@@ -14,8 +14,8 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test:/.js$/,
-          use: ['babel-loader']
+          test: /.js$/,
+          use: ['babel-loader'],
         },
         {
           test: /.s?css$/,
@@ -47,6 +47,10 @@ module.exports = (env, argv) => {
         template: './src/index.html',
       }),
     ],
+    devServer: {
+      port: 9000,
+      hot: true,
+    },
   };
 
   if (isProduction) {
