@@ -2,7 +2,7 @@ import React from 'react';
 import './index.scss';
 import moment from 'moment';
 
-const formatDate = date => moment(date).format('DD MMM YYYY');
+const formatDate = date => moment(date).format('DD MMM YY');
 
 const Profile = props => {
   return (
