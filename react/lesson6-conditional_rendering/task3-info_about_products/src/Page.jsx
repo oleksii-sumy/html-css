@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Message from './Message';
 
-const text1 = '1';
-const text2 = '2';
+const text1 = 'IPhone 13 - Price is 500$. Available in 2 colors';
+const text2 = 'Price is 650$. Not available';
+
 
 class Page extends Component {
   constructor(props) {
