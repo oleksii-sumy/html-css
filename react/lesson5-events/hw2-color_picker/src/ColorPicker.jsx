@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 
 class ColorPicker extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: '',
+    };
+  }
+
   setTitle(color) {
-    document.querySelector('.picker__title').textContent = color;
+    this.setState({
+      color: (document.querySelector('.picker__title').textContent = color),
+    });
   }
   clearTitle() {
-    document.querySelector('.picker__title').textContent = '';
+    this.setState({
+      color: (document.querySelector('.picker__title').textContent = ''),
+    });
   }
 
   render() {
     return (
       <div>
-        <div className="picker__title"></div>
+        <div className="picker__title"> {this.state.color}</div>
         <div>
           <button
             className="picker__button picker__button_coral"
@@ -35,3 +46,4 @@ class ColorPicker extends Component {
 }
 
 export default ColorPicker;
+
