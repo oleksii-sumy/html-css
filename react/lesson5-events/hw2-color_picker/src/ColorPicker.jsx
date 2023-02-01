@@ -35,20 +35,3 @@ class ColorPicker extends Component {
 }
 
 export default ColorPicker;
-
-
-// class ColorPicker extends Component {
-//         constructor(props) {
-//     super(props);
-//     this.state = {
-//       btnColor: '',
-//     };
-//   }
-//   getColorName(color) {
-//     const colorElement = document.querySelector('.picker__title');
-
-//     this.setState({
-//       btnColor: colorElement.textContent = color,
-//     });
-//   }
-
