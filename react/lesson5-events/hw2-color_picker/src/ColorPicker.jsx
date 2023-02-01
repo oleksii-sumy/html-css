@@ -3,42 +3,40 @@ import React, { Component } from 'react';
 class ColorPicker extends Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      color: '',
+      activeColor: null,
     };
   }
 
-  setTitle(color) {
+  setTitle = title => {
     this.setState({
-      color: (document.querySelector('.picker__title').textContent = color),
+      activeColor: title,
     });
-  }
-  clearTitle() {
-    this.setState({
-      color: (document.querySelector('.picker__title').textContent = ''),
-    });
-  }
+  };
+
+  clearTitle = () => this.setTitle(null);
 
   render() {
     return (
       <div>
-        <div className="picker__title"> {this.state.color}</div>
+        <div className="picker__title">{this.state.activeColor}</div>
         <div>
           <button
             className="picker__button picker__button_coral"
             onMouseEnter={() => this.setTitle('Coral')}
-            onMouseLeave={() => this.clearTitle()}
-          ></button>
+            onMouseLeave={this.clearTitle}
+          />
           <button
             className="picker__button picker__button_aqua"
             onMouseEnter={() => this.setTitle('Aqua')}
-            onMouseLeave={() => this.clearTitle()}
-          ></button>
+            onMouseLeave={this.clearTitle}
+          />
           <button
             className="picker__button picker__button_bisque"
             onMouseEnter={() => this.setTitle('Bisque')}
-            onMouseLeave={() => this.clearTitle()}
-          ></button>
+            onMouseLeave={this.clearTitle}
+          />
         </div>
       </div>
     );
@@ -46,4 +44,5 @@ class ColorPicker extends Component {
 }
 
 export default ColorPicker;
+
 
