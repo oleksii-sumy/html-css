@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
 class ColorPicker extends Component {
-  getColorName(color) {
-    const colorElement = document.querySelector('.picker__title');
-    colorElement.textContent = color;
+  setTitle(color) {
+    document.querySelector('.picker__title').textContent = color;
+  }
+  clearTitle() {
+    document.querySelector('.picker__title').textContent = '';
   }
 
   render() {
@@ -13,15 +15,18 @@ class ColorPicker extends Component {
         <div>
           <button
             className="picker__button picker__button_coral"
-            onMouseOver={() => this.getColorName('Coral')}
+            onMouseEnter={() => this.setTitle('Coral')}
+            onMouseLeave={() => this.clearTitle()}
           ></button>
           <button
             className="picker__button picker__button_aqua"
-            onMouseOver={() => this.getColorName('Aqua')}
+            onMouseEnter={() => this.setTitle('Coral')}
+            onMouseLeave={() => this.clearTitle()}
           ></button>
           <button
             className="picker__button picker__button_bisque"
-            onMouseOver={() => this.getColorName('Bisque')}
+            onMouseEnter={() => this.setTitle('Coral')}
+            onMouseLeave={() => this.clearTitle()}
           ></button>
         </div>
       </div>
@@ -30,3 +35,20 @@ class ColorPicker extends Component {
 }
 
 export default ColorPicker;
+
+
+// class ColorPicker extends Component {
+//         constructor(props) {
+//     super(props);
+//     this.state = {
+//       btnColor: '',
+//     };
+//   }
+//   getColorName(color) {
+//     const colorElement = document.querySelector('.picker__title');
+
+//     this.setState({
+//       btnColor: colorElement.textContent = color,
+//     });
+//   }
+
