@@ -20,12 +20,12 @@ class ColorPicker extends Component {
           ></button>
           <button
             className="picker__button picker__button_aqua"
-            onMouseEnter={() => this.setTitle('Coral')}
+            onMouseEnter={() => this.setTitle('Aqua')}
             onMouseLeave={() => this.clearTitle()}
           ></button>
           <button
             className="picker__button picker__button_bisque"
-            onMouseEnter={() => this.setTitle('Coral')}
+            onMouseEnter={() => this.setTitle('Bisque')}
             onMouseLeave={() => this.clearTitle()}
           ></button>
         </div>
