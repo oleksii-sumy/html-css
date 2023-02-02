@@ -4,7 +4,7 @@ const Info = (props) => {
   if(!props.info) {
     return null;
   }
-  return <div className="message">{props.info}</div>;
+  return <div className="info">{props.info}</div>;
 }
 
 export default Info;
