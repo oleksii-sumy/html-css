@@ -1,11 +1,10 @@
 import React from "react";
 
-const Login = props => {
+const Login = ({onLogin}) => {
   return (
-    <button className="login">
-      Logout
-    </button>
+  <button className="login btn" onClick={onLogin}>Login</button>      
   );
 };
 
 export default Login;
+
