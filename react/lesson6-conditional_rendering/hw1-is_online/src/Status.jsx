@@ -12,10 +12,10 @@ class Status extends Component {
 
 render() {
   let buttonStatus;
-  if (this.state.isOnline) {
-    buttonStatus= <Online /> 
+    if (this.state.isOnline) {
+    buttonStatus = <Online currentStatus={this.handler} />; 
   } else {
-    buttonStatus = <Offline />;
+    buttonStatus = <Offline currentStatus={this.handler}/>;
   }
     return (
       <div className="status">
