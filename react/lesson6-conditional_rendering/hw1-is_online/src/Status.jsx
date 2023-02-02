@@ -10,9 +10,20 @@ class Status extends Component {
     }
   }
 
+  handler = () => {
+    this.state.isOnline
+      ? this.setState({
+          isOnline: false,
+        })
+      : this.setState({
+          isOnline: true,
+        });
+
+  };
+
 render() {
   let buttonStatus;
-    if (this.state.isOnline) {
+  if (this.state.isOnline) {
     buttonStatus = <Online currentStatus={this.handler} />; 
   } else {
     buttonStatus = <Offline currentStatus={this.handler}/>;
