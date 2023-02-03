@@ -7,15 +7,18 @@ class Auth extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {
+        this.state = {
       isLoggedIn: false,
+      spinner: false,
     };
   }
   handleLogoinClick = () => {
     this.setState({
       isLoggedIn: true,
+      spinner: true,
+
     });
-  };
+
   handleLogoutClick = () => {
     this.setState({
       isLoggedIn: false,
