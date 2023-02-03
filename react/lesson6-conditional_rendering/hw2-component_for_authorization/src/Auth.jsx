@@ -25,22 +25,21 @@ class Auth extends Component {
   render() {
     let button;
     if (this.state.isLoggedIn) {
-      button = <Logout onLogout={this.handleLogoutClick} />
-
+      button = <Logout onLogout={this.handleLogoutClick} />;
     } else {
-      button = <Login onLogin={this.handleLogoinClick} />
-      
-          }
+      button = <Login onLogin={this.handleLogoinClick} />;
+    }
     return (
       <>
-        <Spinner size={'45px'} />
-       { button }
+        {setTimeout( () => {button}, 2000 )}
+        {this.state.spinner === true && <Spinner size={'45px'} />}
       </>
     );
   }
 }
 
 export default Auth;
+
 
 
 
