@@ -7,7 +7,7 @@ class Auth extends Component {
   constructor(props) {
     super(props);
 
-        this.state = {
+    this.state = {
       isLoggedIn: false,
       spinner: false,
     };
@@ -16,9 +16,8 @@ class Auth extends Component {
     this.setState({
       isLoggedIn: true,
       spinner: true,
-
     });
-
+  };
   handleLogoutClick = () => {
     this.setState({
       isLoggedIn: false,
@@ -34,7 +33,9 @@ class Auth extends Component {
     }
     return (
       <>
-        {setTimeout( () => {button}, 2000 )}
+        {setTimeout(() => {
+          button;
+        }, 2000)}
         {this.state.spinner === true && <Spinner size={'45px'} />}
       </>
     );
