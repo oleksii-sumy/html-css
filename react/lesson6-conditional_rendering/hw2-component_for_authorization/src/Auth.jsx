@@ -14,10 +14,19 @@ class Auth extends Component {
   }
   handleLogoinClick = () => {
     this.setState({
-      isLoggedIn: true,
       spinner: true,
     });
+
+setTimeout(
+  () =>
+    this.setState({
+      isLoggedIn: true,
+      spinner: false,
+    }),
+  2000,
+);
   };
+
   handleLogoutClick = () => {
     this.setState({
       isLoggedIn: false,
@@ -29,21 +38,12 @@ class Auth extends Component {
     if (this.state.isLoggedIn) {
       button = <Logout onLogout={this.handleLogoutClick} />;
     } else {
-      button = <Login onLogin={this.handleLogoinClick} />;
+      button = this.state.spinner ? <Spinner size={'45px'} /> : <Login onLogin={this.handleLogoinClick} />;
     }
-    return (
-      <>
-        {setTimeout(() => {
-          button;
-        }, 2000)}
-        {this.state.spinner === true && <Spinner size={'45px'} />}
-      </>
-    );
+    return <>
+    {button}
+    </>
   }
 }
 
 export default Auth;
-
-
-
-
