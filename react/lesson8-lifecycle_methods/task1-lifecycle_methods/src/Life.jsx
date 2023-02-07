@@ -11,12 +11,11 @@ componentDidMount() {
 }
 shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate(nextProps, nextState): decide to render or not to render');
-    return nextProps.number % 2;
+    return true;
 }
-componentDidUpdate(prevProps) {
+componentDidUpdate() {
       console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
-      return prevProps
-}
+      }
 componentWillUnmount() {
         console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
 
