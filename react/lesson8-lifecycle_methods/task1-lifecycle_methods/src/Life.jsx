@@ -14,7 +14,7 @@ shouldComponentUpdate(nextProps, nextState) {
     return nextProps.number % 2;
 }
 componentDidUpdate() {
-      console.log('componentDidUpdate(prevProps, prevtState): some updates based on new props');
+      console.log('componentDidUpdate(prevProps, prevState): some updates based on new props');
 }
 componentWillUnmount() {
         console.log('componentWillUnmount(): cleanup before DOM related to component will be removed');
