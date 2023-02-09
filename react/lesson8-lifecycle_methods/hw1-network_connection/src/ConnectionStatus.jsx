@@ -6,13 +6,10 @@ class ConnectionStatus extends Component {
     this.state = {
       status: 'online',
     };
-    console.log(this.state.status);
   }
   componentDidMount() {
     window.addEventListener('online', this.getOnStatus);
     window.addEventListener('offline', this.getOffStatus);
-
-    const { offline, online } = window;
   }
 
   componentWillUnmount() {
@@ -21,19 +18,16 @@ class ConnectionStatus extends Component {
   }
 
   getOffStatus = e => {
-    const { offline } = e.target;
-    this.setStatus(offline);
+    this.setStatus('offline');
   };
   getOnStatus = e => {
-    const { online } = e.target;
-    this.setStatus(online);
+    this.setStatus('online');
   };
 
   setStatus(status) {
     this.setState({
       status,
     });
-    console.log(this.state.status);
   }
 
   render() {
@@ -48,4 +42,5 @@ class ConnectionStatus extends Component {
 }
 
 export default ConnectionStatus;
+
 
