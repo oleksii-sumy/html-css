@@ -34,7 +34,7 @@ class ConnectionStatus extends Component {
   render() {
     let renderingStatus;
     if (this.state.status === 'offline') {
-      renderingStatus = <div className="status status_offline">offline</div>;
+      renderingStatus = <div className="status status_offline">{this.state.status}</div>;
     } else {
       renderingStatus = <div className="status ">{this.state.status}</div>;
     }
