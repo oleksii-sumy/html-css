@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import UserForm from './UserForm';
 
-function App(props) {
-  createUser = props => {
-    console.log(props.this.state);
+class App extends Component {
+  createUser = userData => {
+    console.log(userData);
   };
 
-  return <UserForm />;
+  render() {
+    return <UserForm onSubmit={this.createUser} />;
+  }
 }
 
 export default App;
