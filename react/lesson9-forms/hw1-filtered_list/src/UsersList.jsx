@@ -8,10 +8,11 @@ class Userslist extends Component {
   };
 
   handleForm = event => {
-        let { filter } = event.target;
-        this.setState({
-          filter,
-        });
+    event.preventDefault();
+      const { value } = event.target;
+    this.setState({
+      value,
+    });
 
   };
 
@@ -19,17 +20,14 @@ class Userslist extends Component {
     let filtredList;
     if (!this.state.filter === "") {
       filtredList = this.props.users
-        .filterText()
         .slice()
-        .filter(text => text === 'filter');
+        .filter(text => text.name.includes('filter'));
     } else {
       filtredList = this.props.users;
     }
     return (
       <div>
-        <div className="filter">
-          <Filter filterText={this.state.filter} />
-        </div>
+        <Filter filterText="a" count={this.filtredList.length} onChange={this.handleForm}/>
         <ul className="users">
           {filtredList.map(user => (
             <User key={user.id} {...user} />
