@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class UserForm extends Component {
   state = {
     name: '',
-    student: '',
+    student: "boolean",
     occupation: '',
     about: '',
   };
@@ -19,6 +19,7 @@ class UserForm extends Component {
 
   handleSubmit = event =>{
     event.preventDefault();
+    console.log(this.state);
   };
 
   render() {
