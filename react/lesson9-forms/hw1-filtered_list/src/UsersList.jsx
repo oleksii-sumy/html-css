@@ -2,40 +2,37 @@ import React, { Component } from 'react';
 import User from './User';
 import Filter from './Filter';
 
-class Userslist extends Component {
+class UsersList extends Component {
   state = {
-    filter: "",
+    filterText: '',
   };
 
-  handleForm = event => {
-    event.preventDefault();
-      const { value } = event.target;
+  handleChange = event => {
     this.setState({
-      value,
+      filterText: event.target.value.toLowerCase(),
     });
-
   };
 
   render() {
-    let filtredList;
-    if (!this.state.filter === "") {
-      filtredList = this.props.users
-        .slice()
-        .filter(text => text.name.includes('filter'));
-    } else {
-      filtredList = this.props.users;
-    }
+    const { users } = this.props; //п3 таски
+    const filtredUsers = users.filter(user => user.name.includes(this.state.filterText));
+
     return (
-      <div>
-        <Filter filterText="a" count={this.filtredList.length} onChange={this.handleForm}/>
-        <ul className="users">
-          {filtredList.map(user => (
-            <User key={user.id} {...user} />
+      <>
+        <Filter
+          filterText={this.state.filterText}
+          onChange={this.handleChange}
+          count={users.length}
+        />
+
+        <ul class="users">
+          {filtredUsers.map(user => (
+            <User name={user.name} age={user.age} />
           ))}
         </ul>
-      </div>
+      </>
     );
   }
 }
 
-export default Userslist;
+export default UsersList;

@@ -1,28 +1,16 @@
-import React, {Component} from 'react';
+import React from "react";
 
-class Filter extends Component {
-  state = {
-    value: props.filterText,
-  };
+const Filter = ({filterText, count, onChange}) => {
 
-  handleInput = event => {
-    this.props.handleForm(this.state)
-  };
-
-  render() {
-    return (
+  return (
+    <>
       <div className="filter">
-        <span className="filter__count">{props.count}</span>
-        <input
-          type="text"
-          className="filter__input"
-          value={this.state.value}
-          onChange={this.handleInput}
-        />
+        <span className="filter__count">{count}</span>
+        <input type="text" className="filter__input" value={filterText} onChange={onChange} />
       </div>
-    );
-  }
+    </>
+  );
+
 }
-
-
 export default Filter;
+
