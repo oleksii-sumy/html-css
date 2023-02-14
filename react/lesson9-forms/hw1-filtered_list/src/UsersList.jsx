@@ -27,7 +27,7 @@ class UsersList extends Component {
 
         <ul class="users">
           {filtredUsers.map(user => (
-            <User name={user.name} age={user.age} />
+            <User key={user.id} name={user.name} age={user.age} />
           ))}
         </ul>
       </>
