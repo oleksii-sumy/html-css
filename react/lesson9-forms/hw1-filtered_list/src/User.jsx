@@ -10,6 +10,5 @@ const User = ({name, age}) => {
   );
 
 }
-
 export default User;
 
