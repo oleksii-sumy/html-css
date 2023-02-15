@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, {Component} from "react";
 import User from './User';
-import Filter from './Filter';
+import Filter from "./Filter";
 
 class UsersList extends Component {
   state = {
@@ -27,7 +27,7 @@ class UsersList extends Component {
 
         <ul class="users">
           {filtredUsers.map(user => (
-            <User key={user.id} name={user.name} age={user.age} />
+            <User name={user.name} age={user.age} />
           ))}
         </ul>
       </>
