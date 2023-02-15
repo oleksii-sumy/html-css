@@ -13,48 +13,8 @@ body {
   align-items: center;
 }
 
-.users {
-  list-style-type: none;
-  padding: 0;
-}
-
-.user {
-  margin: 8px;
-  display: flex;
-
-  &__age {
-    font-weight: 700;
-    opacity: 0.5;
-    margin-left: auto;
-  }
-}
-
-.filter {
-  display: flex;
-  height: 32px;
-
-  &__input {
-    flex: 1;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
-    border: 3px solid #ff7f50;
-    border-left: none;
-    padding: 8px;
-    font-size: 24px;
-    outline: none;
-  }
-
-  &__count {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border: 3px solid #ff7f50;
-    border-right: none;
-    width: 40px;
-    line-height: 28px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    background: #ff7f50;
-    color: #fff;
-  }
+.square {
+  height: 35px;
+  width: 35px;
+  background-color: aquamarine;
 }
