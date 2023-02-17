@@ -7,7 +7,7 @@ class ShoppingCart extends Component {
     cartItems: [
       {
         id: '1',
-        name: 'iPhone11',
+        name: 'iPhone 11',
         price: 999,
       },
       {
