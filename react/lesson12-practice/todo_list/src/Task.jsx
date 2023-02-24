@@ -10,7 +10,7 @@ const Task = ({done, text, onChange, id, onDelete}) => {
     <li className={listItemClasses}>
       <input
         type="checkbox"
-        className="listlist-item__checkbox"
+        className="list-item__checkbox"
         defaultChecked={done}
         onChange={() => onChange(id)}
       />
