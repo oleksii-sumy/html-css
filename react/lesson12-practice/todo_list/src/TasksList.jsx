@@ -38,7 +38,7 @@ class TasksList extends React.Component {
     const { done, text } = this.state.tasks.find(task => task.id === id);
     const updatedTask = {
       text,
-      don: !done,
+      done: !done,
     };
 
     updateTask(id, updatedTask).then(() => this.fetchTasks());
