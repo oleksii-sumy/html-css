@@ -17,11 +17,8 @@ function Products() {
       <Switch>
         <Route exact path="/products">
           <span>Select a product please </span>
-          <Product />
         </Route>
-        <Route path="/product/:productId">
-          <Product />
-        </Route>
+        <Route path="/products/:productId" component={Product} />
       </Switch>
     </div>
   );
