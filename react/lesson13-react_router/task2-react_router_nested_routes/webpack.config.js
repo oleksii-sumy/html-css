@@ -9,6 +9,7 @@ module.exports = (env, argv) => {
     entry: './src/index.jsx',
     output: {
       filename: 'bundle.js',
+      publicPath: '/',
     },
     module: {
       rules: [
@@ -42,7 +43,6 @@ module.exports = (env, argv) => {
       open: true,
       hot: true,
       port: 8080,
-      historyApiFallback:true,
     },
   };
 
