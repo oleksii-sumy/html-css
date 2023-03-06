@@ -1,11 +1,27 @@
 import React, { useState, useEffect } from 'react';
 
+const ConnectionStatus = () => {
+  const [status, setStatus] = useState('onLine');
 
+  useEffect(() => {
+    const getOffStatus = e => {
+      setStatus('offline');
+    };
+    const getOnStatus = e => {
+      setStatus('online');
+    };
 
+    window.addEventListener('online', getOnStatus);
+    window.addEventListener('offline', getOffStatus);
 
-class ConnectionStatus extends React.Component {
-  render() {
-    return <div className={this.props.changeClass}>{this.props.status}</div>;
-  }
-}
+    return () => {
+      window.removeEventListener('online', getOnStatus);
+      window.removeEventListener('offline', getOffStatus);
+    };
+  }, [status]);
+
+  let changeClass = status === 'offline' ? 'status_offline' : 'status';
+
+  return <div className={changeClass}>{status}</div>;
+};
 export default ConnectionStatus;
