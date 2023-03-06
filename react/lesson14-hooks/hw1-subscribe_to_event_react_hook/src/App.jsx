@@ -21,8 +21,8 @@ const App = () => {
     };
   }, [status]);
 
-  let connectStatus = status === 'offLine' ? 'status status_offline' : 'status status_online';
+  let changeClass = status === 'offline' ? "status status_offline" : "status";
 
-  return <ConnectionStatus classForRender={connectStatus} status={status} />;
+  return <ConnectionStatus changeClass={changeClass} status={status} />;
 };
 export default App;
