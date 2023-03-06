@@ -20,7 +20,7 @@ const ConnectionStatus = () => {
     };
   }, [status]);
 
-  let changeClass = status === 'offline' ? 'status_offline' : 'status';
+  let changeClass = status === 'offline' ? 'status status_offline' : 'status';
 
   return <div className={changeClass}>{status}</div>;
 };
